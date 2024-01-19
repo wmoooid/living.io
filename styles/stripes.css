@@ -1,0 +1,22 @@
+.stripes__container {
+    position: absolute;
+    inset: 0;
+}
+
+.stripes__element {
+    width: 1px;
+    background-color: var(--stripe);
+}
+
+.stripes__element:nth-child(1) {
+    grid-column: 2;
+}
+.stripes__element:nth-child(2) {
+    grid-column: 3;
+}
+.stripes__element:nth-child(3) {
+    grid-column: 4;
+}
+.stripes__element:nth-child(4) {
+    grid-column: 5;
+}

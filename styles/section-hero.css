@@ -1,0 +1,34 @@
+.section-hero {
+    margin-top: 13rem;
+    margin-bottom: 11rem;
+}
+
+.section-hero__text-container {
+    padding: 2rem;
+    grid-column: 2/5;
+}
+
+.section-hero__heading {
+    margin: 0;
+
+    font-size: 6.25rem;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: -0.03em;
+}
+
+.section-hero__subheading-layout {
+    margin-left: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.section-hero__caption {
+    max-width: 28rem;
+
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.4rem;
+}

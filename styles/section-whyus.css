@@ -1,0 +1,122 @@
+.section-whyus {
+    padding-top: 16rem;
+    padding-bottom: 16rem;
+}
+
+.section-whyus__banner {
+    grid-column: 2/5;
+
+    display: grid;
+    place-items: center;
+    padding: 14rem 3rem;
+
+    background-image: url('/section-whyus__banner-image.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-whyus__container {
+    position: relative;
+}
+
+.section-whyus__container::after {
+    content: '';
+
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 4rem;
+    grid-column: 2/4;
+
+    background-color: var(--background);
+}
+
+.section-whyus__banner-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+
+    max-width: 43rem;
+
+    position: relative;
+    z-index: 1;
+}
+
+.section-whyus__top-caption {
+    color: inherit;
+    text-align: center;
+    font-size: 0.625rem;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+}
+
+.section-whyus__banner-heading {
+    color: inherit;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+.section-whyus__bullets-container {
+    grid-column: 2/5;
+}
+
+.section-whyus__bullets-picker {
+    grid-column: 2/3;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.section-whyus__bullets-caption {
+    display: block;
+    font-size: 0.625rem;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+
+    margin-top: auto;
+    padding: 2.5rem 2.5rem 1.5rem 2.5rem;
+
+    border-bottom: 1px solid var(--stripe);
+}
+
+.section-whyus__bullets-item {
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1;
+
+    padding: 1.75rem 2.5rem;
+
+    border-bottom: 1px solid var(--stripe);
+}
+
+.section-whyus__bullets-description {
+    grid-column: 3/5;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    padding: 6rem 14rem 6rem 8rem;
+    color: #fff;
+    background-color: #000;
+
+    position: relative;
+    z-index: 1;
+}
+
+.section-whyus__bulets-heading {
+    color: inherit;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.section-whyus__bullets-text {
+    color: inherit;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 140%;
+}

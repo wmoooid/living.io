@@ -1,6 +1,7 @@
 .stripes__container {
     position: absolute;
     inset: 0;
+    pointer-events: none;
 }
 
 .stripes__element {

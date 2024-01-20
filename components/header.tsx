@@ -1,5 +1,7 @@
 import '@/styles/header.css';
 
+//переделать на дивайдеры
+
 export default function Header() {
     return (
         <header className='header'>
@@ -34,9 +36,9 @@ export default function Header() {
                                     d='M2.24994 8.01633C2.24901 9.44442 2.73112 10.8308 3.61789 11.9502C4.50467 13.0696 5.74397 13.8562 7.13438 14.1821C8.52478 14.508 9.98454 14.3541 11.2763 13.7453C12.5682 13.1365 13.6161 12.1088 14.2499 10.829C8.57861 10.829 5.76594 8.01567 5.76594 2.345C4.70983 2.86905 3.82108 3.67765 3.19986 4.67969C2.57864 5.68172 2.24964 6.83735 2.24994 8.01633Z'
                                     fill='#1E1E1C'
                                     stroke='#1E1E1C'
-                                    stroke-width='0.5'
-                                    stroke-linecap='round'
-                                    stroke-linejoin='round'
+                                    strokeWidth='0.5'
+                                    strokeLinecap='round'
+                                    strokeLinejoin='round'
                                 />
                             </svg>
                         </span>

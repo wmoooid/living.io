@@ -1,0 +1,86 @@
+.section-quote {
+    padding-top: 16rem;
+}
+
+.section-quote__container {
+    row-gap: 1rem;
+}
+
+.section-quote__top-line {
+    grid-column: 2/5;
+}
+
+.section-quote__list {
+    grid-column: 2/5;
+}
+
+.section-quote__top-line {
+    position: relative;
+}
+
+.section-quote__quote-icon {
+    position: absolute;
+    top: -100%;
+    left: 0;
+}
+
+.section-quote__top-caption {
+    display: block;
+    width: 100%;
+    font-size: 0.625rem;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+}
+
+.section-quote-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding: 0 4rem;
+}
+
+.section-quote-quote-text {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+}
+
+.section-quote__person {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.section-quote__person-image {
+    width: 6rem;
+    height: 6rem;
+
+    background-color: var(--stripe);
+
+    border: 0.25rem solid var(--background);
+    border-radius: 1000rem;
+    box-shadow: 0 0 0 1px var(--stripe);
+}
+
+.section-quote__person-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.section-quote__person-name {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.section-quote__person-position {
+    font-size: 0.625rem;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+}

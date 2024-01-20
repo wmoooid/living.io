@@ -1,7 +1,29 @@
+@font-face {
+    font-family: 'Muller';
+    src: local(''), url('/fonts/MullerLight.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muller';
+    src: local(''), url('/fonts/MullerRegular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muller';
+    src: local(''), url('/fonts/MullerMedium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
 :root {
     --background: #fff;
     --black: #1e1e1c;
-    --stripe: #e4e4e4;
+    --stripe: rgba(201, 201, 201, 0.5);
+    --grid-template-columns: 10% 1fr 1fr 1fr 10%;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -21,6 +43,7 @@
 
 html,
 body {
+    position: relative;
     padding: 0;
     margin: 0;
     background-color: var(--background);
@@ -43,14 +66,14 @@ ul {
     list-style: none;
 }
 
-main {
+/* main {
     position: relative;
     z-index: 1;
-}
+} */
 
 .container {
     display: grid;
-    grid-template-columns: 10% 1fr 1fr 1fr 10%;
+    grid-template-columns: var(--grid-template-columns);
 }
 
 .btn {

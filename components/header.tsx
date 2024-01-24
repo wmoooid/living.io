@@ -1,4 +1,4 @@
-import '@/styles/header.css';
+import '@/styles/components/header.scss';
 
 //переделать на дивайдеры
 

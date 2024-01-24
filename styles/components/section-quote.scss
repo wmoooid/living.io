@@ -1,0 +1,80 @@
+.section-quote {
+    padding-top: 16rem;
+
+    &__container {
+        row-gap: 1rem;
+    }
+
+    &__top-line {
+        grid-column: 2/5;
+    }
+
+    &__list {
+        grid-column: 2/5;
+    }
+
+    &__top-line {
+        position: relative;
+    }
+
+    &__quote-icon {
+        position: absolute;
+        top: -100%;
+        left: 0;
+    }
+
+    &__top-caption {
+        display: block;
+        width: 100%;
+        text-align: center;
+
+        @extend %caps;
+    }
+
+    &-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        padding: 0 4rem;
+    }
+
+    &-quote-text {
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 300;
+        line-height: 150%;
+        letter-spacing: -0.02em;
+    }
+
+    &__person {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+    &__person-image {
+        width: 6rem;
+        height: 6rem;
+
+        background-color: var(--stripe);
+
+        border: 0.25rem solid var(--background);
+        border-radius: 1000rem;
+        box-shadow: 0 0 0 1px var(--stripe);
+    }
+
+    &__person-text {
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+    }
+
+    &__person-name {
+        @extend %h4;
+    }
+
+    &__person-position {
+        @extend %caps;
+    }
+}

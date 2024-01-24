@@ -2,7 +2,7 @@ import Header from '@/components/header';
 import Footer from '@/components/footer';
 import Stripes from '@/components/stripes';
 import '@/node_modules/normalize.css';
-import '@/styles/globals.css';
+import '@/styles/globals.scss';
 
 export const metadata = {
     title: 'Living.io',

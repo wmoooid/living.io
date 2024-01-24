@@ -1,4 +1,4 @@
-import '@/styles/section-quote.css';
+import '@/styles/components/section-quote.scss';
 
 export default function SectionQuote() {
     return (

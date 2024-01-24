@@ -1,4 +1,4 @@
-import '@/styles/section-whyus.css';
+import '@/styles/components/section-whyus.scss';
 
 export default function SectionWhyus() {
     return (

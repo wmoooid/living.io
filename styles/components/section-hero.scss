@@ -1,0 +1,87 @@
+.section-hero {
+    &__container {
+        row-gap: 10rem;
+    }
+
+    &__text-container {
+        position: relative;
+        z-index: 1;
+
+        margin-top: 8rem;
+        padding: 2rem;
+        grid-column: 2/5;
+    }
+
+    &__heading {
+        @extend %h1;
+
+        margin: 0 0 1.5rem 0;
+    }
+
+    &__subheading-layout {
+        margin-left: 1.5rem;
+
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    &__caption {
+        max-width: 28rem;
+
+        @extend %body;
+    }
+
+    &__slider {
+        display: grid;
+        position: relative;
+
+        grid-template-columns: var(--grid-template-columns);
+        grid-column: 1/6;
+    }
+
+    &__slider::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        height: 6rem;
+        width: 100%;
+        grid-column: 2/4;
+        background-color: #fff;
+    }
+
+    &__slider-wrapper {
+        grid-column: 1/6;
+        width: 100%;
+        height: 100%;
+        max-height: 64rem;
+    }
+
+    &__slider-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__order-button {
+        @extend %btn-underline;
+    }
+
+    &__slider-button {
+        @extend %caps;
+
+        position: absolute;
+        top: 0;
+
+        display: flex;
+        align-items: center;
+        height: 6rem;
+        width: 100%;
+        padding: 2.25rem;
+        grid-column: 4/6;
+
+        line-height: 1;
+
+        background-color: var(--background);
+    }
+}

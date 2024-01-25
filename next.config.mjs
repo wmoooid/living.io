@@ -8,6 +8,8 @@ const nextConfig = {
           @import "styles/utils/_mixins.scss";
         `,
     },
+
+    // output: 'export',
 };
 
 export default nextConfig;

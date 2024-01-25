@@ -1,4 +1,5 @@
 import '@/styles/components/section-hero.scss';
+import Image from 'next/image';
 
 export default function SectionHero() {
     return (
@@ -17,7 +18,7 @@ export default function SectionHero() {
                 </div>
                 <div className='section-hero__slider'>
                     <div className='section-hero__slider-wrapper'>
-                        <img src='section-hero__slider-image.webp' alt='LIVING' className='section-hero__slider-image' />
+                        <Image src={'/img/hero-image.jpg'} alt={'LIVING'} fill={true} />
                     </div>
                     <a href='#' className='section-hero__slider-button'>
                         Learn more

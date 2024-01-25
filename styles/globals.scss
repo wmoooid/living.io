@@ -19,6 +19,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Muller';
+    src: local(''), url('/fonts/MullerBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
 :root {
     --background: #fff;
     --black: #1e1e1c;
@@ -64,6 +71,12 @@ ul {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .container {

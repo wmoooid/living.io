@@ -19,10 +19,10 @@ export default function SectionQuote() {
                 </div>
                 <ul className='section-quote__list'>
                     <li className='section-quote-item'>
-                        <p className='section-quote-quote-text'>
+                        <q className='section-quote-quote-text'>
                             LVNG are modular homes with modern architecture that enable living in the environment of your dreams. The experience of
                             designers and thoughtful solutions create a revolutionary housing concept.
-                        </p>
+                        </q>
                         <div className='section-quote__person'>
                             <img src='' alt='' className='section-quote__person-image' />
                             <div className='section-quote__person-text'>

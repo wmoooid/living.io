@@ -83,3 +83,12 @@ img {
     display: grid;
     grid-template-columns: var(--grid-template-columns);
 }
+
+::placeholder {
+    font-size: 1rem;
+    transform: scale(0.5);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 20px;
+}

@@ -1,5 +1,5 @@
 .section-quote {
-    padding-top: 16rem;
+    padding-top: var(--section-padding);
 
     &__container {
         row-gap: 1rem;
@@ -7,11 +7,11 @@
     }
 
     &__top-line {
-        grid-column: 2/5;
+        grid-column: var(--grid-container-column);
     }
 
     &__list {
-        grid-column: 2/5;
+        grid-column: var(--grid-container-column);
     }
 
     &__top-line {
@@ -41,11 +41,10 @@
     }
 
     &-quote-text {
-        text-align: center;
         font-size: 3rem;
+        text-align: center;
         font-weight: 300;
         line-height: 150%;
-        letter-spacing: -0.02em;
     }
 
     &__person {
@@ -80,5 +79,32 @@
 
     &__person-position {
         @extend %caps;
+    }
+}
+
+@media screen and (width < 576px) {
+    .section-quote {
+        &__container {
+            padding: 0;
+        }
+
+        &__quote-icon {
+            display: none;
+        }
+
+        &-item {
+            gap: 1.5rem;
+            padding: 0 2rem;
+        }
+
+        &-quote-text {
+            font-size: 1.5rem;
+            line-height: 140%;
+        }
+
+        &__person-image {
+            width: 5rem;
+            height: 5rem;
+        }
     }
 }

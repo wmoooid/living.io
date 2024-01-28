@@ -60,10 +60,14 @@ export default function SectionProjects() {
                 <div className='section-projects__switcher'>
                     <div className='section-projects__switcher-button'>
                         <Icon_arrow direction='left' />
-                        <span>Previous project</span>
+                        <span>
+                            Previous<span className='mobile-hidden'> project</span>
+                        </span>
                     </div>
                     <div className='section-projects__switcher-button'>
-                        <span>Next project</span>
+                        <span>
+                            Next<span className='mobile-hidden'> project</span>
+                        </span>
                         <Icon_arrow direction='right' />
                     </div>
                 </div>

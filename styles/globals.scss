@@ -3,6 +3,8 @@
     --black: #1e1e1c;
     --stripe: rgba(201, 201, 201, 0.5);
     --grid-template-columns: 10% 1fr 1fr 1fr 10%;
+    --grid-container-column: 2/5;
+    --section-padding: 16rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -61,4 +63,20 @@ img {
     min-height: 1px;
     align-self: stretch;
     background-color: var(--stripe);
+}
+
+@media screen and (width < 576px) {
+    * {
+        font-size: max(12px, 3vw);
+    }
+
+    :root {
+        --grid-template-columns: 7% 1fr 7%;
+        --grid-container-column: 2;
+        --section-padding: 6rem;
+    }
+
+    .mobile-hidden {
+        display: none;
+    }
 }

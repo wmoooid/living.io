@@ -1,8 +1,8 @@
 .section-whyus {
-    padding-top: 16rem;
+    padding-top: var(--section-padding);
 
     &__banner {
-        grid-column: 2/5;
+        grid-column: var(--grid-container-column);
 
         display: grid;
         position: relative;
@@ -62,7 +62,7 @@
     }
 
     &__bullets-container {
-        grid-column: 2/5;
+        grid-column: var(--grid-container-column);
     }
 
     &__bullets-picker {
@@ -123,5 +123,39 @@
         color: inherit;
 
         @extend %body;
+    }
+}
+
+@media screen and (width < 576px) {
+    .section-whyus {
+        &__banner {
+            padding: 10rem 2rem;
+            max-width: calc(100vw - 14%);
+        }
+
+        &__bullets-picker {
+            grid-column: 2;
+        }
+
+        &__bullets-description {
+            grid-column: 2;
+            padding: 2rem;
+        }
+
+        &__container::after {
+            content: none;
+        }
+
+        &__bullets-caption {
+            display: none;
+        }
+
+        &__bullets-item {
+            padding: 1.5rem 2rem;
+        }
+
+        &__banner-heading {
+            font-size: 2.5rem;
+        }
     }
 }

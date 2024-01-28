@@ -12,10 +12,10 @@ export default function Header() {
                     <Icon_logo />
                 </span>
                 <ul className='header__nav-list'>
-                    <li className='header__nav-item'>
+                    {/* <li className='header__nav-item'>
                         <span className='header__nav-text'>Community</span>
                     </li>
-                    <Divider />
+                    <Divider /> */}
                     <li className='header__nav-item'>
                         <span className='header__nav-text'>Menu</span>
                         <span className='header__nav-icon'>

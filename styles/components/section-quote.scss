@@ -55,6 +55,9 @@
     }
 
     &__person-image {
+        position: relative;
+        overflow: hidden;
+
         width: 6rem;
         height: 6rem;
 

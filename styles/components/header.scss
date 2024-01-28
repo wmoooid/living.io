@@ -37,7 +37,7 @@
     &__nav-text {
         @extend %caps;
 
-        transform: translateY(0.1rem);
+        transform: translateY(1px);
     }
 
     &__nav-icon {

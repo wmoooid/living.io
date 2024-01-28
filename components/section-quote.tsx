@@ -1,5 +1,6 @@
 import '@/styles/components/section-quote.scss';
 import Icon_quote from './icons/Icon_quote';
+import Image from 'next/image';
 
 export default function SectionQuote() {
     return (
@@ -18,9 +19,11 @@ export default function SectionQuote() {
                             designers and thoughtful solutions create a revolutionary housing concept.
                         </q>
                         <div className='section-quote__person'>
-                            <img src='' alt='' className='section-quote__person-image' />
+                            <div className='section-quote__person-image'>
+                                <Image src={'/img/quote-avatar-1.jpg'} alt={'Witold Borek'} fill={true} />
+                            </div>
                             <div className='section-quote__person-text'>
-                                <strong className='section-quote__person-name'>mgr inż. Witold Borek</strong>
+                                <strong className='section-quote__person-name'>Witold Borek</strong>
                                 <small className='section-quote__person-position'>
                                     Chief Technology Officer, <br /> founder of LVNG
                                 </small>

@@ -1,0 +1,125 @@
+.section-projects {
+    padding-top: 10rem;
+
+    &__container {
+        position: relative;
+        z-index: 1;
+        padding: 6rem 0;
+
+        border-top: 1px solid var(--stripe);
+        border-bottom: 1px solid var(--stripe);
+        background-color: var(--background);
+    }
+
+    &__heading {
+        @extend %h2;
+
+        grid-column: 2/5;
+    }
+
+    &__projects-wrapper {
+        margin-top: 3rem;
+        grid-column: 2/5;
+    }
+
+    &__project {
+        position: relative;
+    }
+
+    &__project-image {
+        position: relative;
+
+        height: 42rem;
+        grid-column: 2/5;
+
+        & img {
+            padding-right: 25%;
+        }
+    }
+
+    &__description-wrapper {
+        z-index: 1;
+        position: absolute;
+        right: 4.5rem;
+        top: 0;
+        bottom: 0;
+
+        width: 32rem;
+        padding: 2rem 0;
+    }
+
+    &__description {
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 2.5rem 4.5rem 2.5rem 2.5rem;
+
+        background-color: var(--background);
+        border: 1px solid var(--stripe);
+    }
+
+    &__description-topside {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+
+    &__description-heading {
+        @extend %h3;
+    }
+
+    &__description-text {
+        @extend %body;
+    }
+
+    &__params-list {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    &__params-name {
+        @extend %body;
+
+        color: var(--black);
+        opacity: 0.75;
+    }
+
+    &__params-value {
+        @extend %body;
+
+        font-weight: 400;
+        margin-inline-start: 1rem;
+    }
+
+    &__features-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    &__features-heading {
+        @extend %body;
+    }
+
+    &__features-list {
+        padding-inline-start: 1.1rem;
+        opacity: 0.75;
+    }
+
+    &__features-item {
+        @extend %body;
+    }
+
+    &__pricing-wrapepr {
+        padding-top: 0.75rem;
+
+        border-top: 1px solid var(--stripe);
+    }
+
+    &__cta-button {
+        @extend %btn-underline;
+    }
+}

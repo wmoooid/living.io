@@ -1,10 +1,14 @@
 import '@/styles/components/section-whyus.scss';
+import Image from 'next/image';
 
 export default function SectionWhyus() {
     return (
         <section className='section-whyus'>
             <div className='container section-whyus__container'>
                 <div className='section-whyus__banner'>
+                    <div className='section-whyus__banner-image'>
+                        <Image src={'/img/whyus-image.jpg'} alt='background' fill={true} />
+                    </div>
                     <div className='section-whyus__banner-text'>
                         <small className='section-whyus__top-caption'>Why lvng?</small>
                         <h2 className='section-whyus__banner-heading'>Take a big step into the future of living</h2>

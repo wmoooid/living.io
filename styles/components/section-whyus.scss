@@ -8,18 +8,6 @@
         position: relative;
         place-items: center;
         padding: 14rem 3rem;
-
-        // background-image: url('/img/whyus-image.jpg');
-        // background-repeat: no-repeat;
-        // background-size: cover;
-        // background-position: center;
-
-        // &::before {
-        //     content: '';
-        //     position: absolute;
-        //     inset: 0;
-        //     background-color: rgba($color: #000000, $alpha: 0.6);
-        // }
     }
 
     &__container {
@@ -96,6 +84,10 @@
     }
 
     &__bullets-item {
+        display: flex;
+        gap: 1rem;
+        justify-content: space-between;
+
         font-size: 1.125rem;
         font-weight: 500;
         line-height: 1;
@@ -103,6 +95,7 @@
         padding: 1.75rem 2.5rem;
 
         border-bottom: 1px solid var(--stripe);
+        cursor: pointer;
     }
 
     &__bullets-description {

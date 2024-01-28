@@ -6,6 +6,8 @@
         z-index: 1;
         padding: 6rem 0;
 
+        row-gap: 3rem;
+
         border-top: 1px solid var(--stripe);
         border-bottom: 1px solid var(--stripe);
         background-color: var(--background);
@@ -18,7 +20,6 @@
     }
 
     &__projects-wrapper {
-        margin-top: 3rem;
         grid-column: 2/5;
     }
 
@@ -121,5 +122,25 @@
 
     &__cta-button {
         @extend %btn-underline;
+    }
+
+    &__switcher {
+        grid-column: 2/5;
+
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    &__switcher-button {
+        @extend %caps;
+
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        & span {
+            transform: translateY(0.1rem);
+        }
     }
 }

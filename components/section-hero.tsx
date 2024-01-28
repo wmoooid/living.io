@@ -1,5 +1,6 @@
 import '@/styles/components/section-hero.scss';
 import Image from 'next/image';
+import Icon_arrow from './icons/icon-arrow';
 
 export default function SectionHero() {
     return (
@@ -21,7 +22,8 @@ export default function SectionHero() {
                         <Image src={'/img/hero-image.jpg'} alt={'LIVING'} fill={true} />
                     </div>
                     <a href='#' className='section-hero__slider-button'>
-                        Learn more
+                        <Icon_arrow direction='bottom' />
+                        <span>Learn more</span>
                     </a>
                 </div>
             </div>

@@ -1,5 +1,6 @@
 import '@/styles/components/section-projects.scss';
 import Image from 'next/image';
+import Icon_arrow from './icons/icon-arrow';
 
 export default function SectionProjects() {
     return (
@@ -54,6 +55,16 @@ export default function SectionProjects() {
                                 </a>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div className='section-projects__switcher'>
+                    <div className='section-projects__switcher-button'>
+                        <Icon_arrow direction='left' />
+                        <span>Previous project</span>
+                    </div>
+                    <div className='section-projects__switcher-button'>
+                        <span>Next project</span>
+                        <Icon_arrow direction='right' />
                     </div>
                 </div>
             </div>

@@ -1,5 +1,6 @@
 import '@/styles/components/section-whyus.scss';
 import Image from 'next/image';
+import Icon_arrow from './icons/icon-arrow';
 
 export default function SectionWhyus() {
     return (
@@ -18,10 +19,19 @@ export default function SectionWhyus() {
                 <div className='section-whyus__bullets-picker'>
                     <small className='section-whyus__bullets-caption'>What we offer</small>
                     <ul className='section-whyus__bullets-list'>
-                        <li className='section-whyus__bullets-item'>Modern architecture & technology</li>
-                        <li className='section-whyus__bullets-item'>Efficient layout design</li>
-                        <li className='section-whyus__bullets-item'>Short implementation time</li>
-                        <li className='section-whyus__bullets-item'>Years of guarantee</li>
+                        <li className='section-whyus__bullets-item'>
+                            <span>Modern architecture & technology</span>
+                            <Icon_arrow />
+                        </li>
+                        <li className='section-whyus__bullets-item'>
+                            <span>Efficient layout design</span>
+                        </li>
+                        <li className='section-whyus__bullets-item'>
+                            <span>Short implementation time</span>
+                        </li>
+                        <li className='section-whyus__bullets-item'>
+                            <span>Years of guarantee</span>
+                        </li>
                     </ul>
                 </div>
 

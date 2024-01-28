@@ -7,7 +7,7 @@
     top: 1.25rem;
     z-index: 100;
 
-    padding: 1rem 2rem;
+    padding: 1.5rem 2rem;
     margin: 0 5%;
 
     border: 1px solid var(--stripe);
@@ -21,26 +21,23 @@
     &__nav-list {
         display: flex;
         align-items: center;
+        gap: 3rem;
     }
 
     &__nav-item {
         display: flex;
         align-items: center;
         gap: 0.75rem;
-        height: 100%;
-        cursor: pointer;
-    }
 
-    &__nav-item:not(:last-child)::after {
-        content: '';
-        margin: 0 var(--horizontal-gap);
-        width: 1px;
-        height: 1.5rem;
-        background-color: var(--stripe);
+        height: 100%;
+
+        cursor: pointer;
     }
 
     &__nav-text {
         @extend %caps;
+
+        transform: translateY(0.1rem);
     }
 
     &__nav-icon {

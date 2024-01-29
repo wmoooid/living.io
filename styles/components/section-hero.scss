@@ -9,7 +9,7 @@
 
         margin-top: 8rem;
         padding: 2rem;
-        grid-column: var(--grid-container-column);
+        grid-column: var(--grid-container-columns);
     }
 
     &__heading {
@@ -81,7 +81,7 @@
 
         line-height: 1;
 
-        background-color: var(--background);
+        background-color: var(--background-color);
     }
 }
 
@@ -94,7 +94,7 @@
         &__text-container {
             margin-top: 5rem;
             padding: 2rem;
-            grid-column: var(--grid-container-column);
+            grid-column: var(--grid-container-columns);
         }
 
         &__heading {

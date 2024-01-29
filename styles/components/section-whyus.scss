@@ -2,7 +2,7 @@
     padding-top: var(--section-padding);
 
     &__banner {
-        grid-column: var(--grid-container-column);
+        grid-column: var(--grid-container-columns);
 
         display: grid;
         position: relative;
@@ -23,7 +23,7 @@
         height: 4rem;
         grid-column: 2/4;
 
-        background-color: var(--background);
+        background-color: var(--background-color);
     }
 
     &__banner-image {
@@ -62,7 +62,7 @@
     }
 
     &__bullets-container {
-        grid-column: var(--grid-container-column);
+        grid-column: var(--grid-container-columns);
     }
 
     &__bullets-picker {
@@ -80,7 +80,7 @@
         margin-top: auto;
         padding: 2.5rem 2.5rem 1.5rem 2.5rem;
 
-        border-bottom: 1px solid var(--stripe);
+        border-bottom: 1px solid var(--stripe-color);
     }
 
     &__bullets-item {
@@ -94,7 +94,7 @@
 
         padding: 1.75rem 2.5rem;
 
-        border-bottom: 1px solid var(--stripe);
+        border-bottom: 1px solid var(--stripe-color);
         cursor: pointer;
     }
 
@@ -105,7 +105,7 @@
         flex-direction: column;
         gap: 1.5rem;
 
-        padding: 6rem 14rem 6rem 8rem;
+        padding: 10% 24% 10% 12%;
         color: #fff;
         background-color: #000;
 

@@ -7,11 +7,11 @@
     }
 
     &__top-line {
-        grid-column: var(--grid-container-column);
+        grid-column: var(--grid-container-columns);
     }
 
     &__list {
-        grid-column: var(--grid-container-column);
+        grid-column: var(--grid-container-columns);
     }
 
     &__top-line {
@@ -60,11 +60,11 @@
         width: 6rem;
         height: 6rem;
 
-        background-color: var(--stripe);
+        background-color: var(--stripe-color);
 
-        border: 0.25rem solid var(--background);
+        border: 0.25rem solid var(--background-color);
         border-radius: 1000rem;
-        box-shadow: 0 0 0 1px var(--stripe);
+        box-shadow: 0 0 0 1px var(--stripe-color);
     }
 
     &__person-text {

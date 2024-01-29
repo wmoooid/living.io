@@ -1,9 +1,9 @@
 :root {
-    --background: #fff;
-    --black: #1e1e1c;
-    --stripe: rgba(201, 201, 201, 0.5);
+    --background-color: #fff;
+    --main-color: #1e1e1c;
+    --stripe-color: rgba(201, 201, 201, 0.5);
     --grid-template-columns: 10% 1fr 1fr 1fr 10%;
-    --grid-container-column: 2/5;
+    --grid-container-columns: 2/5;
     --section-padding: 16rem;
 }
 
@@ -28,12 +28,12 @@ body {
     position: relative;
     padding: 0;
     margin: 0;
-    background-color: var(--background);
+    background-color: var(--background-color);
 }
 
 * {
     box-sizing: border-box;
-    color: var(--black);
+    color: var(--main-color);
 }
 
 a {
@@ -62,7 +62,7 @@ img {
     min-width: 1px;
     min-height: 1px;
     align-self: stretch;
-    background-color: var(--stripe);
+    background-color: var(--stripe-color);
 }
 
 @media screen and (width < 1200px) {
@@ -82,7 +82,7 @@ img {
 
     :root {
         --grid-template-columns: 7% 1fr 7%;
-        --grid-container-column: 2;
+        --grid-container-columns: 2;
         --section-padding: 6rem;
     }
 

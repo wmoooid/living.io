@@ -8,19 +8,19 @@
 
         row-gap: 3rem;
 
-        border-top: 1px solid var(--stripe);
-        border-bottom: 1px solid var(--stripe);
-        background-color: var(--background);
+        border-top: 1px solid var(--stripe-color);
+        border-bottom: 1px solid var(--stripe-color);
+        background-color: var(--background-color);
     }
 
     &__heading {
         @extend %h2;
 
-        grid-column: var(--grid-container-column);
+        grid-column: var(--grid-container-columns);
     }
 
     &__projects-wrapper {
-        grid-column: var(--grid-container-column);
+        grid-column: var(--grid-container-columns);
     }
 
     &__project {
@@ -30,9 +30,9 @@
     &__project-image {
         position: relative;
 
-        // height: 42rem;
-        aspect-ratio: 2/1;
-        grid-column: var(--grid-container-column);
+        height: 42rem;
+        // aspect-ratio: 2/1;
+        grid-column: var(--grid-container-columns);
 
         & img {
             padding-right: 25%;
@@ -60,8 +60,8 @@
 
         padding: 2.5rem 4.5rem 2.5rem 2.5rem;
 
-        background-color: var(--background);
-        border: 1px solid var(--stripe);
+        background-color: var(--background-color);
+        border: 1px solid var(--stripe-color);
     }
 
     &__description-topside {
@@ -87,7 +87,7 @@
     &__params-name {
         @extend %body;
 
-        color: var(--black);
+        color: var(--main-color);
         opacity: 0.75;
     }
 
@@ -120,7 +120,7 @@
     &__pricing-wrapepr {
         padding-top: 0.75rem;
 
-        border-top: 1px solid var(--stripe);
+        border-top: 1px solid var(--stripe-color);
     }
 
     &__cta-button {
@@ -128,7 +128,7 @@
     }
 
     &__switcher {
-        grid-column: var(--grid-container-column);
+        grid-column: var(--grid-container-columns);
 
         display: flex;
         align-items: center;
@@ -161,7 +161,7 @@
         }
 
         &__project-image {
-            aspect-ratio: 16/9;
+            height: 20rem;
             & img {
                 padding-right: 0;
             }

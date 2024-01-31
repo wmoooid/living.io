@@ -1,0 +1,164 @@
+.footer {
+    padding-top: var(--section-padding);
+
+    &__contacts-wrapper {
+        grid-column: 2/2;
+        padding: 2rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 2rem;
+    }
+
+    &__logo-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    &__logo-text {
+        @extend %body;
+        font-size: 0.875rem;
+    }
+
+    &__contacts-subheading {
+        @extend %caps;
+        font-size: 0.625rem;
+    }
+
+    &__address-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    &__address {
+        @extend %body;
+        font-size: 0.875rem;
+        max-width: 8rem;
+    }
+
+    &__writeus {
+        @extend %body;
+        font-size: 0.875rem;
+    }
+
+    &__email {
+        @extend %btn-underline;
+        display: inline-flex;
+        margin-inline-start: 0.5rem;
+    }
+
+    &__socials-list {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__navigation-wrapper {
+        grid-column: 3/3;
+        padding: 2rem;
+
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    &__navigation-subheading {
+        @extend %caps;
+        font-size: 0.625rem;
+    }
+
+    &__navigation-list {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    &__projects-list {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    &__navigation-item {
+        @extend %h4;
+    }
+
+    &__projects-wrapper {
+        grid-column: 4/4;
+        padding: 2rem;
+
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    &__projects-subheading {
+        @extend %caps;
+        font-size: 0.625rem;
+    }
+
+    &__projects-item {
+        @extend %h4;
+    }
+
+    &__copyright-wrapper {
+        grid-column: 2/5;
+        padding: 2rem;
+
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+
+        border-top: 1px solid var(--stripe-color);
+    }
+
+    &__copyright {
+        @extend %caps;
+        font-size: 0.625rem;
+    }
+
+    &__policy {
+        @extend %btn-underline;
+        font-size: 0.625rem;
+    }
+}
+
+@media screen and (width < 768px) {
+    .footer {
+        &__contacts-wrapper {
+            grid-column: 2/2;
+        }
+
+        &__address {
+            max-width: none;
+        }
+
+        &__navigation-wrapper {
+            grid-column: 2/2;
+            padding-top: 0.5rem;
+            gap: 1rem;
+        }
+        &__projects-wrapper {
+            grid-column: 2/2;
+            padding-top: 0.5rem;
+            gap: 1rem;
+        }
+
+        &__navigation-list {
+            gap: 1rem;
+        }
+
+        &__projects-list {
+            gap: 1rem;
+        }
+
+        &__copyright-wrapper {
+            flex-direction: column;
+        }
+    }
+}

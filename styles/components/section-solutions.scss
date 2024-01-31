@@ -2,10 +2,11 @@
     padding-top: var(--section-padding);
 
     &__container {
-        row-gap: 3rem;
+        row-gap: 5rem;
     }
 
     &__heading-wrapper {
+        z-index: 1;
         grid-column: var(--grid-container-columns);
 
         display: flex;
@@ -48,14 +49,37 @@
     &__item-caption {
         @extend %body;
         width: max-content;
+        min-width: 6rem;
+    }
+
+    &__item-side {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        gap: 10rem;
     }
 
     &__item-heading {
         @extend %h3;
         font-size: 2.5rem;
     }
+}
 
-    &__item-button {
-        margin-left: auto;
+@media screen and (width < 768px) {
+    .section-solutions {
+        &__list {
+            z-index: unset;
+        }
+
+        &__item {
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        &__item-heading {
+            font-size: 2rem;
+        }
     }
 }

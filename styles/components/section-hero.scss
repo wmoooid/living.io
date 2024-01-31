@@ -82,6 +82,10 @@
         line-height: 1;
 
         background-color: var(--background-color);
+
+        & > span {
+            font-size: inherit;
+        }
     }
 }
 

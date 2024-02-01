@@ -12,6 +12,8 @@
         display: flex;
         flex-direction: column;
         gap: 0.25rem;
+
+        padding: 0 1rem;
     }
 
     &__top-caption {
@@ -35,7 +37,7 @@
 
         display: flex;
         align-items: center;
-        gap: 10rem;
+        gap: 15%;
 
         background-color: var(--background-color);
         border: 1px solid var(--stripe-color);
@@ -68,6 +70,10 @@
 
 @media screen and (width < 768px) {
     .section-solutions {
+        &__container {
+            row-gap: 3rem;
+        }
+
         &__list {
             z-index: unset;
         }
@@ -76,10 +82,15 @@
             align-items: flex-start;
             flex-direction: column;
             gap: 1rem;
+            padding: 2rem;
         }
 
         &__item-heading {
-            font-size: 2rem;
+            font-size: 1.75rem;
+        }
+
+        &__item-side {
+            gap: 3rem;
         }
     }
 }

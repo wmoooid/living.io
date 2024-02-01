@@ -18,7 +18,7 @@ export default function SectionContact() {
                         <a href='#' className='section-contact__link'>
                             <span className='section-contact__link-text'>TELEGRAM</span>
                             <span className='section-contact__link-icon'>
-                                <Icon_arrow />
+                                <Icon_arrow direction='diagonal' />
                             </span>
                         </a>
                     </li>
@@ -26,7 +26,7 @@ export default function SectionContact() {
                         <a href='#' className='section-contact__link'>
                             <span className='section-contact__link-text'>Discord</span>
                             <span className='section-contact__link-icon'>
-                                <Icon_arrow />
+                                <Icon_arrow direction='diagonal' />
                             </span>
                         </a>
                     </li>
@@ -34,7 +34,7 @@ export default function SectionContact() {
                         <a href='#' className='section-contact__link'>
                             <span className='section-contact__link-text'>LinkedIn</span>
                             <span className='section-contact__link-icon'>
-                                <Icon_arrow />
+                                <Icon_arrow direction='diagonal' />
                             </span>
                         </a>
                     </li>

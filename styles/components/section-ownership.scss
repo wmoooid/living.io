@@ -95,5 +95,9 @@
             grid-template-columns: 1fr;
             row-gap: 3rem;
         }
+
+        &__content-wrapper {
+            padding: 1rem;
+        }
     }
 }

@@ -107,5 +107,9 @@
         &__grid-list {
             grid-template-columns: repeat(1, 1fr);
         }
+
+        &__header {
+            margin: 0 2.25rem;
+        }
     }
 }

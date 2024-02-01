@@ -54,8 +54,14 @@
         padding: 2rem;
     }
 
+    &__link-icon {
+        display: flex;
+    }
+
     &__link-text {
         @extend %caps;
+
+        transform: translateY(1px);
     }
 }
 

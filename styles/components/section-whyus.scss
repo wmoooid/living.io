@@ -129,8 +129,7 @@
 @media screen and (width < 768px) {
     .section-whyus {
         &__banner {
-            padding: 10rem 2rem;
-            max-width: calc(100vw - 14%);
+            padding: 8rem 2rem;
         }
 
         &__bullets-picker {
@@ -139,7 +138,7 @@
 
         &__bullets-description {
             grid-column: 2;
-            padding: 2rem;
+            padding: 3rem 2rem;
         }
 
         &__container::after {
@@ -151,7 +150,7 @@
         }
 
         &__bullets-item {
-            padding: 1.5rem 2rem;
+            padding: 2rem;
         }
 
         &__banner-heading {

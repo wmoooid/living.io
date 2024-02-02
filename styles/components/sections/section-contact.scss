@@ -47,6 +47,8 @@
 
     &__links-item {
         @extend %list-anim;
+
+        cursor: pointer;
     }
 
     &__link {

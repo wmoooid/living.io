@@ -7,8 +7,24 @@
 
     background-color: var(--background-color);
 
+    opacity: 0;
+    transition: opacity 300ms ease-out;
+
+    &.visible {
+        opacity: 1;
+
+        .menu__container {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
     &__container {
         height: 100%;
+
+        opacity: 0;
+        transform: translateY(-100%);
+        transition: opacity 750ms ease-out, transform 750ms var(--ease-back);
     }
 
     &__nav {
@@ -32,6 +48,13 @@
     &__nav-item {
         display: flex;
         gap: 0.5rem;
+
+        cursor: pointer;
+        transition: opacity 200ms ease-in-out;
+
+        &:hover {
+            opacity: 0.7;
+        }
 
         &-num {
             font-size: 0.625rem;
@@ -73,6 +96,13 @@
         align-items: center;
         justify-content: space-between;
         gap: 1rem;
+
+        cursor: pointer;
+        transition: opacity 200ms ease-in-out;
+
+        &:hover {
+            opacity: 0.7;
+        }
 
         &-text {
             font-size: 1.5rem;
@@ -134,5 +164,45 @@
                 height: 1rem;
             }
         }
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes roll-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-110%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes roll-out {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-110%);
     }
 }

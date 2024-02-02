@@ -50,6 +50,8 @@
         border: 1px solid var(--stripe-color);
         border-right: none;
 
+        cursor: pointer;
+
         &:not(:last-child) {
             border-bottom: none;
         }

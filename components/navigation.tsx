@@ -17,7 +17,7 @@ export default function Navigation() {
     return (
         <NavigationContext.Provider value={{ isMenuOpened, setIsMenuOpened }}>
             <Header />
-            {isMenuOpened && <Menu />}
+            <Menu />
         </NavigationContext.Provider>
     );
 }

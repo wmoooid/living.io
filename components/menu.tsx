@@ -1,20 +1,23 @@
 import '@/styles/components/menu.scss';
 import Icon_arrow from './icons/icon-arrow';
 import { useLenis } from '@studio-freight/react-lenis';
-import { useEffect } from 'react';
+import { useContext, useEffect } from 'react';
+import { NavigationContext } from './navigation';
 
 export default function Menu() {
+    const { isMenuOpened } = useContext(NavigationContext);
     const lenis = useLenis();
 
     useEffect(() => {
-        lenis.isStopped = true;
-        return () => {
-            lenis.isStopped = false;
-        };
-    }, []);
+        if (isMenuOpened) {
+            lenis && (lenis.isStopped = true);
+        } else {
+            lenis && (lenis.isStopped = false);
+        }
+    }, [isMenuOpened]);
 
     return (
-        <div className='menu'>
+        <div className={isMenuOpened ? 'menu visible' : 'menu'}>
             <div className='container menu__container'>
                 <nav className='menu__nav'>
                     <menu className='menu__nav-list'>

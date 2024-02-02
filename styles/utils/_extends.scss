@@ -88,7 +88,7 @@
     & h3,
     & span {
         z-index: 1;
-        transition: transform 750ms var(--quad), color 750ms var(--quad);
+        transition: transform 750ms var(--quad), color 1200ms var(--quad);
     }
 
     &::before {
@@ -101,16 +101,17 @@
         height: 2rem;
         border-radius: 10rem;
 
-        transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: transform 700ms cubic-bezier(0.5, 0, 0.15, 1);
         transform: scale(0);
 
-        background-color: #000;
+        background-color: var(--main-color);
     }
 
     &:hover {
         color: #fff;
 
         &::before {
+            transition: transform 1000ms cubic-bezier(0.3, 0, 0.15, 1);
             transform: scale(60) translateX(-0.6rem);
             will-change: transform;
         }

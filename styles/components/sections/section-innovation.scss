@@ -85,7 +85,7 @@
             aspect-ratio: 1/1;
 
             border-radius: 10000rem;
-            background-color: #000;
+            background-color: #10100f;
 
             transform: scale(0);
             transition: transform 350ms ease-out;
@@ -93,7 +93,7 @@
 
         &:hover {
             z-index: 10;
-            transform: scale(1.05);
+            transform: scale(1.025);
             outline: 2px solid #3e3e3d;
             will-change: transform;
 

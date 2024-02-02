@@ -1,5 +1,5 @@
-import '@/styles/components/section-quote.scss';
-import Icon_quote from './icons/icon-quote';
+import '@/styles/components/sections/section-quote.scss';
+import Icon_quote from '../icons/icon-quote';
 import Image from 'next/image';
 
 export default function SectionQuote() {

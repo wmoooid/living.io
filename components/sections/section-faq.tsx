@@ -1,5 +1,5 @@
-import '@/styles/components/section-faq.scss';
-import Icon_accordion from './icons/icon-accordion';
+import '@/styles/components/sections/section-faq.scss';
+import Icon_accordion from '../icons/icon-accordion';
 import Image from 'next/image';
 
 export default function SectionFaq() {

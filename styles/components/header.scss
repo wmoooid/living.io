@@ -40,6 +40,12 @@
         height: 100%;
 
         cursor: pointer;
+
+        transition: opacity 200ms ease-out;
+
+        &:hover {
+            opacity: 0.6;
+        }
     }
 
     &__nav-text {

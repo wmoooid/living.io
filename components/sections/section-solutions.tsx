@@ -1,5 +1,5 @@
-import '@/styles/components/section-solutions.scss';
-import Icon_accordion from './icons/icon-accordion';
+import '@/styles/components/sections/section-solutions.scss';
+import Icon_accordion from '../icons/icon-accordion';
 
 export default function SectionSolutions() {
     return (

@@ -3,8 +3,12 @@ import Icon_logo from './icons/icon-logo';
 import Icon_menu from './icons/icon-menu';
 import Icon_lights from './icons/icon-lights';
 import Divider from './divider';
+import { useContext } from 'react';
+import { NavigationContext } from './navigation';
 
 export default function Header() {
+    const { isMenuOpened, setIsMenuOpened } = useContext(NavigationContext);
+
     return (
         <header className='header'>
             <nav className='header__nav'>
@@ -16,7 +20,7 @@ export default function Header() {
                         <span className='header__nav-text'>Community</span>
                     </li>
                     <Divider /> */}
-                    <li className='header__nav-item'>
+                    <li className='header__nav-item' onClick={() => setIsMenuOpened(!isMenuOpened)}>
                         <span className='header__nav-text'>Menu</span>
                         <span className='header__nav-icon'>
                             <Icon_menu />
@@ -26,7 +30,7 @@ export default function Header() {
                     <li className='header__nav-item'>
                         <span className='header__nav-text'>Lights off</span>
                         <span className='header__nav-icon'>
-                            <Icon_lights />
+                            <Icon_lights theme='light' />
                         </span>
                     </li>
                 </ul>

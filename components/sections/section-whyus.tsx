@@ -1,6 +1,6 @@
-import '@/styles/components/section-whyus.scss';
+import '@/styles/components/sections/section-whyus.scss';
 import Image from 'next/image';
-import Icon_arrow from './icons/icon-arrow';
+import Icon_arrow from '../icons/icon-arrow';
 
 export default function SectionWhyus() {
     return (
@@ -20,23 +20,34 @@ export default function SectionWhyus() {
                     <small className='section-whyus__bullets-caption'>What we offer</small>
                     <ul className='section-whyus__bullets-list'>
                         <li className='section-whyus__bullets-item'>
-                            <span>Modern architecture & technology</span>
-                            <Icon_arrow />
+                            <span className='section-whyus__bullets-item-text'>Modern architecture & technology</span>
+                            <span className='section-whyus__bullets-item-icon'>
+                                <Icon_arrow direction='right' />
+                            </span>
                         </li>
                         <li className='section-whyus__bullets-item'>
-                            <span>Efficient layout design</span>
+                            <span className='section-whyus__bullets-item-text'>Efficient layout design</span>
+                            <span className='section-whyus__bullets-item-icon'>
+                                <Icon_arrow direction='right' />
+                            </span>
                         </li>
                         <li className='section-whyus__bullets-item'>
-                            <span>Short implementation time</span>
+                            <span className='section-whyus__bullets-item-text'>Short implementation time</span>
+                            <span className='section-whyus__bullets-item-icon'>
+                                <Icon_arrow direction='right' />
+                            </span>
                         </li>
                         <li className='section-whyus__bullets-item'>
-                            <span>Years of guarantee</span>
+                            <span className='section-whyus__bullets-item-text'>Years of guarantee</span>
+                            <span className='section-whyus__bullets-item-icon'>
+                                <Icon_arrow direction='right' />
+                            </span>
                         </li>
                     </ul>
                 </div>
 
                 <div className='section-whyus__bullets-description'>
-                    <h3 className='section-whyus__bulets-heading'>Modern architecture & technology</h3>
+                    <h3 className='section-whyus__bullets-heading'>Modern architecture & technology</h3>
                     <p className='section-whyus__bullets-text'>
                         Thanks to its unique architecture based on modern technologies and elegant materials, the entire building gains an exceptional
                         character. The construction of the house ensures maximum stability and durability while maintaining excellent thermal

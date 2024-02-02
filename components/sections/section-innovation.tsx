@@ -1,10 +1,10 @@
-import '@/styles/components/section-innovation.scss';
-import Icon_comfort from './icons/icon-comfort';
-import Icon_quality from './icons/icon-quality';
-import Icon_web3 from './icons/icon-web3';
-import Icon_energy from './icons/icon-energy';
-import Icon_marketplace from './icons/icon-marketplace';
-import Icon_price from './icons/icon-price';
+import '@/styles/components/sections/section-innovation.scss';
+import Icon_comfort from '../icons/icon-comfort';
+import Icon_quality from '../icons/icon-quality';
+import Icon_web3 from '../icons/icon-web3';
+import Icon_energy from '../icons/icon-energy';
+import Icon_marketplace from '../icons/icon-marketplace';
+import Icon_price from '../icons/icon-price';
 
 export default function SectionInnovation() {
     return (
@@ -63,7 +63,7 @@ export default function SectionInnovation() {
                         <div className='section-innovation__grid-description'>
                             <h4 className='section-innovation__description-heading'>Energy Net Zero</h4>
                             <p className='section-innovation__description-text'>
-                                Insulation, triple-pane windows, and photovoltaic panels ensure the balance of the building's thermal balance. Green
+                                Insulation, triple-pane windows, and photovoltaic panels ensure the balance of the buildings thermal balance. Green
                                 energy produces up to 3.8 MWh of energy per year.
                             </p>
                         </div>
@@ -75,7 +75,7 @@ export default function SectionInnovation() {
                         <div className='section-innovation__grid-description'>
                             <h4 className='section-innovation__description-heading'>Marketplace</h4>
                             <p className='section-innovation__description-text'>
-                                Homes for "turnkey" living are a time and convenience saver. Together with our partners, you can design the interior,
+                                Homes for turnkey living are a time and convenience saver. Together with our partners, you can design the interior,
                                 garden irrigation, outsource the finishing work, or other outsourcing services.
                             </p>
                         </div>

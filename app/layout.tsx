@@ -1,9 +1,11 @@
 import Header from '@/components/header';
 import Footer from '@/components/footer';
 import Stripes from '@/components/stripes';
+import localFont from 'next/font/local';
+import SmoothScrolling from '@/components/smooth-scrolling';
 import '@/node_modules/normalize.css';
 import '@/styles/globals.scss';
-import localFont from 'next/font/local';
+import Navigation from '@/components/navigation';
 
 const Muller = localFont({
     src: [
@@ -39,10 +41,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     return (
         <html lang='ru' className={Muller.className}>
             <body>
-                <Header />
-                <main>{children}</main>
+                <Navigation />
+                <SmoothScrolling>
+                    <main>{children}</main>
+                    <Footer />
+                </SmoothScrolling>
                 <Stripes />
-                <Footer />
             </body>
         </html>
     );

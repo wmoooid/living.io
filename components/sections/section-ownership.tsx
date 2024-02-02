@@ -1,4 +1,4 @@
-import '@/styles/components/section-ownership.scss';
+import '@/styles/components/sections/section-ownership.scss';
 
 export default function SectionOwnership() {
     return (
@@ -24,43 +24,43 @@ export default function SectionOwnership() {
                                 </ol>
                             </div>
                         </div>
-                        <p className='section-ownership__text'>Join our community and stay up-to-date with the project's development.</p>
+                        <p className='section-ownership__text'>Join our community and stay up-to-date with the projects development.</p>
                         <a href='#' className='section-ownership__cta-button'>
                             Join
                         </a>
                     </div>
                     <div className='section-ownership__image-wrapper'>
                         <svg width='772' height='532' viewBox='0 0 772 532' fill='none' xmlns='http://www.w3.org/2000/svg'>
-                            <path d='M217.411 317.243L133.113 365.911' stroke='#E4E5E6' stroke-width='0.5' />
-                            <path d='M245.53 333.441L161.192 382.133' stroke='#E4E5E6' stroke-width='0.5' />
-                            <path d='M189.326 301.019L105.082 349.657' stroke='#E4E5E6' stroke-width='0.5' />
-                            <path d='M273.571 349.688L189.399 398.284' stroke='#E4E5E6' stroke-width='0.5' />
-                            <path d='M301.705 365.883L217.469 414.515' stroke='#E4E5E6' stroke-width='0.5' />
-                            <path d='M329.844 382.07L245.528 430.75' stroke='#E4E5E6' stroke-width='0.5' />
-                            <path d='M357.82 398.356L273.61 446.974' stroke='#E4E5E6' stroke-width='0.5' />
-                            <path d='M666.977 252.301L301.281 463.433' stroke='#E4E5E6' stroke-width='0.5' />
-                            <path d='M694.871 268.628L329.731 479.44' stroke='#E4E5E6' stroke-width='0.5' />
-                            <path d='M722.995 284.828L357.809 495.666' stroke='#E4E5E6' stroke-width='0.5' />
-                            <path d='M638.931 236.054L582.543 268.61' stroke='#E4E5E6' stroke-width='0.5' />
-                            <path d='M610.663 219.942L582.543 236.176' stroke='#E4E5E6' stroke-width='0.5' />
-                            <path d='M189.282 268.614L76.9099 333.49' stroke='#E4E5E6' stroke-width='0.5' />
-                            <path d='M189.305 236.164L48.9409 317.202' stroke='#E4E5E6' stroke-width='0.5' />
-                            <path d='M442.263 479.546L76.9111 268.61' stroke='#E4E5E6' stroke-width='0.5' />
-                            <path d='M694.873 333.456L582.555 268.61' stroke='#E4E5E6' stroke-width='0.5' />
-                            <path d='M722.993 317.249L582.571 236.175' stroke='#E4E5E6' stroke-width='0.5' />
-                            <path d='M694.872 333.456L582.546 268.606' stroke='#E4E5E6' stroke-width='0.5' />
-                            <path d='M666.831 349.711L582.543 301.047' stroke='#E4E5E6' stroke-width='0.5' />
-                            <path d='M638.74 365.934L554.446 317.266' stroke='#E4E5E6' stroke-width='0.5' />
-                            <path d='M611.036 382.383L526.402 333.519' stroke='#E4E5E6' stroke-width='0.5' />
-                            <path d='M582.573 398.393L498.355 349.769' stroke='#E4E5E6' stroke-width='0.5' />
-                            <path d='M554.447 414.597L470.309 366.019' stroke='#E4E5E6' stroke-width='0.5' />
-                            <path d='M526.546 430.931L442.262 382.269' stroke='#E4E5E6' stroke-width='0.5' />
-                            <path d='M498.353 447.097L414.215 398.519' stroke='#E4E5E6' stroke-width='0.5' />
-                            <path d='M189.277 301.05L104.875 252.32' stroke='#E4E5E6' stroke-width='0.5' />
-                            <path d='M189.28 268.611L132.844 236.027' stroke='#E4E5E6' stroke-width='0.5' />
-                            <path d='M189.328 236.202L160.812 219.738' stroke='#E4E5E6' stroke-width='0.5' />
-                            <path d='M470.182 463.275L386.168 414.769' stroke='#E4E5E6' stroke-width='0.5' />
-                            <path d='M414.216 495.794L48.9419 284.902' stroke='#E4E5E6' stroke-width='0.5' />
+                            <path d='M217.411 317.243L133.113 365.911' stroke='#E4E5E6' strokeWidth='0.5' />
+                            <path d='M245.53 333.441L161.192 382.133' stroke='#E4E5E6' strokeWidth='0.5' />
+                            <path d='M189.326 301.019L105.082 349.657' stroke='#E4E5E6' strokeWidth='0.5' />
+                            <path d='M273.571 349.688L189.399 398.284' stroke='#E4E5E6' strokeWidth='0.5' />
+                            <path d='M301.705 365.883L217.469 414.515' stroke='#E4E5E6' strokeWidth='0.5' />
+                            <path d='M329.844 382.07L245.528 430.75' stroke='#E4E5E6' strokeWidth='0.5' />
+                            <path d='M357.82 398.356L273.61 446.974' stroke='#E4E5E6' strokeWidth='0.5' />
+                            <path d='M666.977 252.301L301.281 463.433' stroke='#E4E5E6' strokeWidth='0.5' />
+                            <path d='M694.871 268.628L329.731 479.44' stroke='#E4E5E6' strokeWidth='0.5' />
+                            <path d='M722.995 284.828L357.809 495.666' stroke='#E4E5E6' strokeWidth='0.5' />
+                            <path d='M638.931 236.054L582.543 268.61' stroke='#E4E5E6' strokeWidth='0.5' />
+                            <path d='M610.663 219.942L582.543 236.176' stroke='#E4E5E6' strokeWidth='0.5' />
+                            <path d='M189.282 268.614L76.9099 333.49' stroke='#E4E5E6' strokeWidth='0.5' />
+                            <path d='M189.305 236.164L48.9409 317.202' stroke='#E4E5E6' strokeWidth='0.5' />
+                            <path d='M442.263 479.546L76.9111 268.61' stroke='#E4E5E6' strokeWidth='0.5' />
+                            <path d='M694.873 333.456L582.555 268.61' stroke='#E4E5E6' strokeWidth='0.5' />
+                            <path d='M722.993 317.249L582.571 236.175' stroke='#E4E5E6' strokeWidth='0.5' />
+                            <path d='M694.872 333.456L582.546 268.606' stroke='#E4E5E6' strokeWidth='0.5' />
+                            <path d='M666.831 349.711L582.543 301.047' stroke='#E4E5E6' strokeWidth='0.5' />
+                            <path d='M638.74 365.934L554.446 317.266' stroke='#E4E5E6' strokeWidth='0.5' />
+                            <path d='M611.036 382.383L526.402 333.519' stroke='#E4E5E6' strokeWidth='0.5' />
+                            <path d='M582.573 398.393L498.355 349.769' stroke='#E4E5E6' strokeWidth='0.5' />
+                            <path d='M554.447 414.597L470.309 366.019' stroke='#E4E5E6' strokeWidth='0.5' />
+                            <path d='M526.546 430.931L442.262 382.269' stroke='#E4E5E6' strokeWidth='0.5' />
+                            <path d='M498.353 447.097L414.215 398.519' stroke='#E4E5E6' strokeWidth='0.5' />
+                            <path d='M189.277 301.05L104.875 252.32' stroke='#E4E5E6' strokeWidth='0.5' />
+                            <path d='M189.28 268.611L132.844 236.027' stroke='#E4E5E6' strokeWidth='0.5' />
+                            <path d='M189.328 236.202L160.812 219.738' stroke='#E4E5E6' strokeWidth='0.5' />
+                            <path d='M470.182 463.275L386.168 414.769' stroke='#E4E5E6' strokeWidth='0.5' />
+                            <path d='M414.216 495.794L48.9419 284.902' stroke='#E4E5E6' strokeWidth='0.5' />
                             <path
                                 d='M771.513 291.552L406.226 80.2109L364.891 121.546L730.178 332.887L771.513 291.552Z'
                                 fill='url(#paint0_linear_29_2239)'
@@ -79,7 +79,7 @@ export default function SectionOwnership() {
                             <path
                                 d='M105.083 238.459L76.9919 254.676L105.083 270.895L133.174 254.677L105.083 238.459Z'
                                 fill='#E4E5E6'
-                                fill-opacity='0.5'
+                                fillOpacity='0.5'
                             />
                             <path
                                 d='M77.0039 254.79L105.094 238.572L133.184 254.79V287.226L105.094 303.444L77.0039 287.226V254.79Z'
@@ -91,15 +91,15 @@ export default function SectionOwnership() {
                             <path
                                 d='M535.895 66.6658L547.21 60.1338L558.525 66.6658V79.7318L547.21 86.2638L535.895 79.7318V66.6658Z'
                                 stroke='#58595B'
-                                stroke-width='0.806'
+                                strokeWidth='0.806'
                             />
                             <path
                                 d='M535.895 66.6658L547.21 60.1338L558.525 66.6658V79.7318L547.21 86.2638L535.895 79.7318V66.6658Z'
                                 stroke='#58595B'
-                                stroke-width='0.806'
+                                strokeWidth='0.806'
                             />
-                            <path d='M558.526 66.665L547.212 73.198V86.263' stroke='#58595B' stroke-width='0.806' />
-                            <path d='M547.21 73.197L535.894 66.665' stroke='#58595B' stroke-width='0.806' />
+                            <path d='M558.526 66.665L547.212 73.198V86.263' stroke='#58595B' strokeWidth='0.806' />
+                            <path d='M547.21 73.197L535.894 66.665' stroke='#58595B' strokeWidth='0.806' />
                             <path
                                 d='M105.008 348.593L133.098 332.375L161.188 348.593V381.029L133.098 397.247L105.008 381.029V348.593Z'
                                 fill='white'
@@ -107,7 +107,7 @@ export default function SectionOwnership() {
                             <path
                                 d='M133.098 331.515L105.007 347.732L133.098 363.951L161.189 347.733L133.098 331.515Z'
                                 fill='#E4E5E6'
-                                fill-opacity='0.5'
+                                fillOpacity='0.5'
                             />
                             <path
                                 d='M105.008 348.593L133.098 332.375L161.188 348.593V381.029L133.098 397.247L105.008 381.029V348.593Z'
@@ -123,7 +123,7 @@ export default function SectionOwnership() {
                             <path
                                 d='M638.567 174.595L610.476 190.812L638.567 207.031L666.658 190.813L638.567 174.595Z'
                                 fill='#E4E5E6'
-                                fill-opacity='0.5'
+                                fillOpacity='0.5'
                             />
                             <path
                                 d='M610.477 190.813L638.567 174.595L666.657 190.813V223.249L638.567 239.467L610.477 223.249V190.813Z'
@@ -134,59 +134,59 @@ export default function SectionOwnership() {
                             <path
                                 d='M175.258 68.2725L159.207 77.5395L175.258 86.8065L191.309 77.5395L175.258 68.2725Z'
                                 fill='#808083'
-                                fill-opacity='0.5'
+                                fillOpacity='0.5'
                             />
                             <path
                                 d='M159.207 77.5316L175.258 68.2646L191.309 77.5316V96.0656L175.258 105.333L159.207 96.0656V77.5316Z'
                                 stroke='#58595B'
-                                stroke-width='1.143'
+                                strokeWidth='1.143'
                             />
                             <path
                                 d='M159.207 77.5316L175.258 68.2646L191.309 77.5316V96.0656L175.258 105.333L159.207 96.0656V77.5316Z'
                                 stroke='#58595B'
-                                stroke-width='1.143'
+                                strokeWidth='1.143'
                             />
-                            <path d='M191.308 77.5303L175.258 86.7973V105.33' stroke='#58595B' stroke-width='1.143' />
-                            <path d='M175.257 86.7963L159.207 77.5303' stroke='#58595B' stroke-width='1.143' />
+                            <path d='M191.308 77.5303L175.258 86.7973V105.33' stroke='#58595B' strokeWidth='1.143' />
+                            <path d='M175.257 86.7963L159.207 77.5303' stroke='#58595B' strokeWidth='1.143' />
                             <path
                                 d='M357.845 365.906L385.935 382.124L414.051 365.895L442.138 382.11L385.958 414.546L301.704 365.884L329.755 349.688L357.845 365.906Z'
                                 fill='#808083'
-                                fill-opacity='0.25'
+                                fillOpacity='0.25'
                             />
                             <path
                                 d='M442.137 284.804L414.046 301.021L442.137 317.24L470.228 301.022L442.137 284.804Z'
                                 fill='#808083'
-                                fill-opacity='0.25'
+                                fillOpacity='0.25'
                             />
                             <path
                                 d='M385.956 187.491L357.864 203.71L385.957 219.927L414.046 203.71L385.956 187.491Z'
                                 fill='#808083'
-                                fill-opacity='0.25'
+                                fillOpacity='0.25'
                             />
                             <path
                                 d='M357.864 236.145L329.774 252.362L357.864 268.581L385.952 252.363L357.864 236.145Z'
                                 fill='#808083'
-                                fill-opacity='0.25'
+                                fillOpacity='0.25'
                             />
                             <path
                                 d='M385.934 317.254L357.843 333.471L385.934 349.69L414.025 333.472L385.934 317.254Z'
                                 fill='#808083'
-                                fill-opacity='0.25'
+                                fillOpacity='0.25'
                             />
                             <path
                                 d='M301.684 268.597L273.593 284.737L301.683 301.033L329.775 284.815L301.684 268.597Z'
                                 fill='#808083'
-                                fill-opacity='0.25'
+                                fillOpacity='0.25'
                             />
                             <path
                                 d='M329.775 155.055L301.683 171.273L329.774 187.491L357.861 171.275L329.775 155.055Z'
                                 fill='#808083'
-                                fill-opacity='0.25'
+                                fillOpacity='0.25'
                             />
                             <path
                                 d='M414.044 236.145L385.953 252.362L414.049 268.585L442.139 252.367L414.044 236.145Z'
                                 fill='#808083'
-                                fill-opacity='0.25'
+                                fillOpacity='0.25'
                             />
                             <path
                                 d='M329.774 349.669V284.816L301.683 301.034V365.886L329.774 349.669ZM329.774 349.669L357.864 365.887L385.936 382.122L414.052 365.893L442.138 382.11V317.239L470.228 301.021L470.229 138.843L385.953 90.1836L357.86 138.836L329.774 122.62L329.775 155.054L301.683 171.273V268.598'
@@ -208,38 +208,38 @@ export default function SectionOwnership() {
                             <path d='M385.935 382.122V349.686L357.863 333.479L385.952 317.25L414.025 333.468L414.051 365.892' stroke='#58595B' />
                             <path d='M385.938 349.687L414.028 333.469' stroke='#58595B' />
                             <path d='M329.774 252.362L357.864 268.582' stroke='#58595B' />
-                            <path d='M461.146 132.949C469.469 118.535 474.91 109.11 474.91 109.11' stroke='#808083' stroke-width='0.5' />
-                            <path d='M451.782 127.546C460.105 113.132 465.546 103.707 465.546 103.707' stroke='#808083' stroke-width='0.5' />
-                            <path d='M442.415 122.14C450.738 107.726 456.179 98.3008 456.179 98.3008' stroke='#808083' stroke-width='0.5' />
-                            <path d='M433.052 116.735C441.375 102.321 446.816 92.8955 446.816 92.8955' stroke='#808083' stroke-width='0.5' />
-                            <path d='M423.689 111.328C432.012 96.9143 437.453 87.4893 437.453 87.4893' stroke='#808083' stroke-width='0.5' />
-                            <path d='M414.325 105.921C422.648 91.507 428.089 82.082 428.089 82.082' stroke='#808083' stroke-width='0.5' />
-                            <path d='M404.962 100.515C413.285 86.1008 418.726 76.6758 418.726 76.6758' stroke='#808083' stroke-width='0.5' />
-                            <path d='M395.599 95.1095C403.922 80.6955 409.363 71.2705 409.363 71.2705' stroke='#808083' stroke-width='0.5' />
-                            <path d='M357.723 139.086C379.806 100.838 399.999 65.8643 399.999 65.8643' stroke='#808083' stroke-width='0.5' />
-                            <path d='M348.36 133.679C370.443 95.431 390.636 60.457 390.636 60.457' stroke='#808083' stroke-width='0.5' />
-                            <path d='M338.997 128.273C361.08 90.0248 381.273 55.0508 381.273 55.0508' stroke='#808083' stroke-width='0.5' />
-                            <path d='M273.594 219.932L371.91 49.6455' stroke='#808083' stroke-width='0.5' />
-                            <path d='M264.23 214.525L362.546 44.2393' stroke='#808083' stroke-width='0.5' />
-                            <path d='M254.867 209.118L353.183 38.832' stroke='#808083' stroke-width='0.5' />
-                            <path d='M245.504 203.716L343.82 33.4297' stroke='#808083' stroke-width='0.5' />
-                            <path d='M292.316 360.932V295.602' stroke='#808083' stroke-width='0.5' />
-                            <path d='M236.14 198.31L334.456 28.0244' stroke='#808083' stroke-width='0.5' />
-                            <path d='M282.953 355.532V290.168' stroke='#808083' stroke-width='0.5' />
-                            <path d='M226.777 192.904L325.093 22.6182' stroke='#808083' stroke-width='0.5' />
-                            <path d='M273.59 350.102V284.738' stroke='#808083' stroke-width='0.5' />
-                            <path d='M217.414 187.497L315.73 17.2109' stroke='#808083' stroke-width='0.5' />
-                            <path d='M208.051 311.565V182.089' stroke='#808083' stroke-width='0.5' />
-                            <path d='M208.051 182.091L306.367 11.8047' stroke='#808083' stroke-width='0.5' />
-                            <path d='M198.688 306.35V176.684' stroke='#808083' stroke-width='0.5' />
-                            <path d='M217.414 317.162V187.496' stroke='#808083' stroke-width='0.5' />
-                            <path d='M226.777 322.568V192.902' stroke='#808083' stroke-width='0.5' />
-                            <path d='M236.141 327.975V198.309' stroke='#808083' stroke-width='0.5' />
-                            <path d='M245.504 333.381V203.715' stroke='#808083' stroke-width='0.5' />
-                            <path d='M254.867 338.787V209.121' stroke='#808083' stroke-width='0.5' />
-                            <path d='M264.23 344.193V214.527' stroke='#808083' stroke-width='0.5' />
-                            <path d='M198.687 176.685L297.003 6.39941' stroke='#808083' stroke-width='0.5' />
-                            <path d='M189.324 171.279L287.64 0.993164' stroke='#808083' stroke-width='0.5' />
+                            <path d='M461.146 132.949C469.469 118.535 474.91 109.11 474.91 109.11' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M451.782 127.546C460.105 113.132 465.546 103.707 465.546 103.707' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M442.415 122.14C450.738 107.726 456.179 98.3008 456.179 98.3008' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M433.052 116.735C441.375 102.321 446.816 92.8955 446.816 92.8955' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M423.689 111.328C432.012 96.9143 437.453 87.4893 437.453 87.4893' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M414.325 105.921C422.648 91.507 428.089 82.082 428.089 82.082' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M404.962 100.515C413.285 86.1008 418.726 76.6758 418.726 76.6758' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M395.599 95.1095C403.922 80.6955 409.363 71.2705 409.363 71.2705' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M357.723 139.086C379.806 100.838 399.999 65.8643 399.999 65.8643' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M348.36 133.679C370.443 95.431 390.636 60.457 390.636 60.457' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M338.997 128.273C361.08 90.0248 381.273 55.0508 381.273 55.0508' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M273.594 219.932L371.91 49.6455' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M264.23 214.525L362.546 44.2393' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M254.867 209.118L353.183 38.832' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M245.504 203.716L343.82 33.4297' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M292.316 360.932V295.602' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M236.14 198.31L334.456 28.0244' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M282.953 355.532V290.168' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M226.777 192.904L325.093 22.6182' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M273.59 350.102V284.738' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M217.414 187.497L315.73 17.2109' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M208.051 311.565V182.089' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M208.051 182.091L306.367 11.8047' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M198.688 306.35V176.684' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M217.414 317.162V187.496' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M226.777 322.568V192.902' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M236.141 327.975V198.309' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M245.504 333.381V203.715' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M254.867 338.787V209.121' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M264.23 344.193V214.527' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M198.687 176.685L297.003 6.39941' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M189.324 171.279L287.64 0.993164' stroke='#808083' strokeWidth='0.5' />
                             <path
                                 d='M448.107 369.223C448.403 368.71 448.403 368.157 448.107 367.986C447.81 367.815 447.331 368.091 447.035 368.604C446.739 369.116 446.739 369.67 447.036 369.841C447.332 370.012 447.811 369.735 448.107 369.223Z'
                                 fill='#808083'
@@ -1500,31 +1500,31 @@ export default function SectionOwnership() {
                                 d='M357.858 138.837L385.951 90.1846L470.226 138.844V301.022L442.136 317.24L441.711 382.357L385.956 414.547L301.825 365.976V301.105L273.59 284.739L273.595 219.933L329.772 122.621L357.858 138.837Z'
                                 fill='white'
                             />
-                            <path d='M385.957 284.802C385.957 284.802 443.455 185.213 470.509 138.355' stroke='#808083' stroke-width='0.5' />
-                            <path d='M376.594 279.396C376.594 279.396 434.092 179.807 461.146 132.949' stroke='#808083' stroke-width='0.5' />
-                            <path d='M367.23 273.993C367.23 273.993 424.728 174.404 451.782 127.546' stroke='#808083' stroke-width='0.5' />
-                            <path d='M357.863 268.587C357.863 268.587 415.361 168.998 442.415 122.14' stroke='#808083' stroke-width='0.5' />
-                            <path d='M348.5 263.181C348.5 263.181 405.998 163.592 433.052 116.734' stroke='#808083' stroke-width='0.5' />
-                            <path d='M339.136 257.775C339.136 257.775 396.634 158.186 423.688 111.328' stroke='#808083' stroke-width='0.5' />
-                            <path d='M329.773 252.368C329.773 252.368 387.271 152.779 414.325 105.921' stroke='#808083' stroke-width='0.5' />
-                            <path d='M320.41 246.962C320.41 246.962 377.908 147.373 404.962 100.515' stroke='#808083' stroke-width='0.5' />
-                            <path d='M311.047 241.556C311.047 241.556 368.545 141.967 395.599 95.1094' stroke='#808083' stroke-width='0.5' />
-                            <path d='M301.683 236.15C301.683 236.15 359.181 136.561 386.235 89.7031' stroke='#808083' stroke-width='0.5' />
-                            <path d='M292.32 230.743C292.32 230.743 321.716 179.828 348.36 133.679' stroke='#808083' stroke-width='0.5' />
-                            <path d='M282.957 225.337C282.957 225.337 312.353 174.422 338.997 128.273' stroke='#808083' stroke-width='0.5' />
-                            <path d='M273.594 219.931C273.594 219.931 302.99 169.016 329.634 122.867' stroke='#808083' stroke-width='0.5' />
-                            <path d='M273.832 284.798C273.832 252.382 273.832 219.965 273.832 219.965' stroke='#808083' stroke-width='0.5' />
-                            <path d='M282.957 290.173C282.957 257.757 282.957 225.34 282.957 225.34' stroke='#808083' stroke-width='0.5' />
-                            <path d='M292.32 295.579C292.32 263.163 292.32 230.746 292.32 230.746' stroke='#808083' stroke-width='0.5' />
-                            <path d='M301.684 365.818V236.152' stroke='#808083' stroke-width='0.5' />
-                            <path d='M311.047 371.22V241.554' stroke='#808083' stroke-width='0.5' />
-                            <path d='M320.41 376.627V246.961' stroke='#808083' stroke-width='0.5' />
-                            <path d='M329.773 382.033V252.367' stroke='#808083' stroke-width='0.5' />
-                            <path d='M339.137 387.439V257.773' stroke='#808083' stroke-width='0.5' />
-                            <path d='M348.5 392.845V263.179' stroke='#808083' stroke-width='0.5' />
-                            <path d='M357.863 398.252V268.586' stroke='#808083' stroke-width='0.5' />
-                            <path d='M367.23 403.658V273.992' stroke='#808083' stroke-width='0.5' />
-                            <path d='M376.594 409.064V279.398' stroke='#808083' stroke-width='0.5' />
+                            <path d='M385.957 284.802C385.957 284.802 443.455 185.213 470.509 138.355' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M376.594 279.396C376.594 279.396 434.092 179.807 461.146 132.949' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M367.23 273.993C367.23 273.993 424.728 174.404 451.782 127.546' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M357.863 268.587C357.863 268.587 415.361 168.998 442.415 122.14' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M348.5 263.181C348.5 263.181 405.998 163.592 433.052 116.734' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M339.136 257.775C339.136 257.775 396.634 158.186 423.688 111.328' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M329.773 252.368C329.773 252.368 387.271 152.779 414.325 105.921' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M320.41 246.962C320.41 246.962 377.908 147.373 404.962 100.515' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M311.047 241.556C311.047 241.556 368.545 141.967 395.599 95.1094' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M301.683 236.15C301.683 236.15 359.181 136.561 386.235 89.7031' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M292.32 230.743C292.32 230.743 321.716 179.828 348.36 133.679' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M282.957 225.337C282.957 225.337 312.353 174.422 338.997 128.273' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M273.594 219.931C273.594 219.931 302.99 169.016 329.634 122.867' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M273.832 284.798C273.832 252.382 273.832 219.965 273.832 219.965' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M282.957 290.173C282.957 257.757 282.957 225.34 282.957 225.34' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M292.32 295.579C292.32 263.163 292.32 230.746 292.32 230.746' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M301.684 365.818V236.152' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M311.047 371.22V241.554' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M320.41 376.627V246.961' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M329.773 382.033V252.367' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M339.137 387.439V257.773' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M348.5 392.845V263.179' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M357.863 398.252V268.586' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M367.23 403.658V273.992' stroke='#808083' strokeWidth='0.5' />
+                            <path d='M376.594 409.064V279.398' stroke='#808083' strokeWidth='0.5' />
                             <path
                                 d='M395.217 341.281C395.513 340.769 395.513 340.215 395.216 340.044C394.92 339.873 394.441 340.15 394.145 340.662C393.849 341.175 393.849 341.728 394.145 341.899C394.442 342.07 394.921 341.794 395.217 341.281Z'
                                 fill='#808083'
@@ -2240,9 +2240,9 @@ export default function SectionOwnership() {
                                     x2='559.473'
                                     y2='221.739'
                                     gradientUnits='userSpaceOnUse'>
-                                    <stop stop-color='white' />
-                                    <stop offset='0.5' stop-color='white' stop-opacity='0.5' />
-                                    <stop offset='1' stop-color='white' stop-opacity='0' />
+                                    <stop stopColor='white' />
+                                    <stop offset='0.5' stopColor='white' stopOpacity='0.5' />
+                                    <stop offset='1' stopColor='white' stopOpacity='0' />
                                 </linearGradient>
                                 <linearGradient
                                     id='paint1_linear_29_2239'
@@ -2251,9 +2251,9 @@ export default function SectionOwnership() {
                                     x2='546.625'
                                     y2='390.312'
                                     gradientUnits='userSpaceOnUse'>
-                                    <stop stop-color='white' />
-                                    <stop offset='0.5' stop-color='white' stop-opacity='0.5' />
-                                    <stop offset='1' stop-color='white' stop-opacity='0' />
+                                    <stop stopColor='white' />
+                                    <stop offset='0.5' stopColor='white' stopOpacity='0.5' />
+                                    <stop offset='1' stopColor='white' stopOpacity='0' />
                                 </linearGradient>
                                 <linearGradient
                                     id='paint2_linear_29_2239'
@@ -2262,9 +2262,9 @@ export default function SectionOwnership() {
                                     x2='212.04'
                                     y2='218.821'
                                     gradientUnits='userSpaceOnUse'>
-                                    <stop stop-color='white' />
-                                    <stop offset='0.5' stop-color='white' stop-opacity='0.5' />
-                                    <stop offset='1' stop-color='white' stop-opacity='0' />
+                                    <stop stopColor='white' />
+                                    <stop offset='0.5' stopColor='white' stopOpacity='0.5' />
+                                    <stop offset='1' stopColor='white' stopOpacity='0' />
                                 </linearGradient>
                                 <linearGradient
                                     id='paint3_linear_29_2239'
@@ -2273,9 +2273,9 @@ export default function SectionOwnership() {
                                     x2='225.783'
                                     y2='390.312'
                                     gradientUnits='userSpaceOnUse'>
-                                    <stop stop-color='white' />
-                                    <stop offset='0.5' stop-color='white' stop-opacity='0.5' />
-                                    <stop offset='1' stop-color='white' stop-opacity='0' />
+                                    <stop stopColor='white' />
+                                    <stop offset='0.5' stopColor='white' stopOpacity='0.5' />
+                                    <stop offset='1' stopColor='white' stopOpacity='0' />
                                 </linearGradient>
                             </defs>
                         </svg>

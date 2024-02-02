@@ -1,4 +1,4 @@
-import '@/styles/components/section-join.scss';
+import '@/styles/components/sections/section-join.scss';
 import Image from 'next/image';
 
 export default function SectionJoin() {

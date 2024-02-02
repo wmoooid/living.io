@@ -1,7 +1,18 @@
 import '@/styles/components/menu.scss';
 import Icon_arrow from './icons/icon-arrow';
+import { useLenis } from '@studio-freight/react-lenis';
+import { useEffect } from 'react';
 
 export default function Menu() {
+    const lenis = useLenis();
+
+    useEffect(() => {
+        lenis.isStopped = true;
+        return () => {
+            lenis.isStopped = false;
+        };
+    }, []);
+
     return (
         <div className='menu'>
             <div className='container menu__container'>

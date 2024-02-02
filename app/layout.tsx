@@ -41,12 +41,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     return (
         <html lang='ru' className={Muller.className}>
             <body>
-                <Navigation />
                 <SmoothScrolling>
+                    <Navigation />
                     <main>{children}</main>
                     <Footer />
+                    <Stripes />
                 </SmoothScrolling>
-                <Stripes />
             </body>
         </html>
     );

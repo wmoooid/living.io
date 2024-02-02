@@ -53,12 +53,15 @@
         &:not(:last-child) {
             border-bottom: none;
         }
+
+        @extend %list-anim;
     }
 
     &__item-heading {
         @extend %h4;
         font-size: 1.25rem;
         line-height: 110%;
+        color: inherit;
     }
 
     &__spoiler-wrapper {

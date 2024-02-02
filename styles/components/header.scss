@@ -9,6 +9,8 @@
     border: 1px solid var(--stripe-color);
     background-color: var(--background-color);
 
+    user-select: none;
+
     &__nav {
         display: flex;
         justify-content: space-between;

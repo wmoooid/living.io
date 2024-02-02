@@ -2,7 +2,6 @@
     position: fixed;
     inset: 0;
     z-index: 50;
-    overflow: hidden;
 
     padding-top: 3rem;
 
@@ -99,7 +98,7 @@
 
         &__nav {
             grid-column: 2/2;
-            padding: 1rem 7% 1rem 7%;
+            padding: 3rem 7% 3rem 7%;
             justify-content: center;
         }
 

@@ -12,7 +12,7 @@ export default function SectionFaq() {
                 </div>
                 <ul className='section-faq__list'>
                     <li className='section-faq__item'>
-                        <h4 className='section-faq__item-heading'>Can the house be modified?</h4>
+                        <h3 className='section-faq__item-heading'>Can the house be modified?</h3>
                         <span className='section-faq__item-button'>
                             <Icon_accordion />
                         </span>
@@ -21,7 +21,7 @@ export default function SectionFaq() {
                         </div>
                     </li>
                     <li className='section-faq__item'>
-                        <h4 className='section-faq__item-heading'>What is the standard equipment and what is included in the house price?</h4>
+                        <h3 className='section-faq__item-heading'>What is the standard equipment and what is included in the house price?</h3>
                         <span className='section-faq__item-button'>
                             <Icon_accordion />
                         </span>
@@ -30,7 +30,7 @@ export default function SectionFaq() {
                         </div>
                     </li>
                     <li className='section-faq__item'>
-                        <h4 className='section-faq__item-heading'>How does the complete construction process work?</h4>
+                        <h3 className='section-faq__item-heading'>How does the complete construction process work?</h3>
                         <span className='section-faq__item-button'>
                             <Icon_accordion />
                         </span>
@@ -39,7 +39,7 @@ export default function SectionFaq() {
                         </div>
                     </li>
                     <li className='section-faq__item'>
-                        <h4 className='section-faq__item-heading'>Do I need a building permit?</h4>
+                        <h3 className='section-faq__item-heading'>Do I need a building permit?</h3>
                         <span className='section-faq__item-button'>
                             <Icon_accordion />
                         </span>
@@ -48,7 +48,7 @@ export default function SectionFaq() {
                         </div>
                     </li>
                     <li className='section-faq__item'>
-                        <h4 className='section-faq__item-heading'>Does the building site need to be equipped?</h4>
+                        <h3 className='section-faq__item-heading'>Does the building site need to be equipped?</h3>
                         <span className='section-faq__item-button'>
                             <Icon_accordion />
                         </span>
@@ -57,7 +57,7 @@ export default function SectionFaq() {
                         </div>
                     </li>
                     <li className='section-faq__item'>
-                        <h4 className='section-faq__item-heading'>How much do I have to pay and when?</h4>
+                        <h3 className='section-faq__item-heading'>How much do I have to pay and when?</h3>
                         <span className='section-faq__item-button'>
                             <Icon_accordion />
                         </span>

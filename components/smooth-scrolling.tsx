@@ -9,7 +9,7 @@ interface props {
 
 function SmoothScrolling({ children }: props) {
     return (
-        <ReactLenis root options={{ lerp: 0.1, duration: 1.5, smoothTouch: true }}>
+        <ReactLenis class={'menu'} root options={{ lerp: 0.1, duration: 1.5, smoothTouch: true }}>
             {children}
         </ReactLenis>
     );

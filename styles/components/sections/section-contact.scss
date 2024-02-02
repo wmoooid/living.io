@@ -45,6 +45,10 @@
         border-bottom: 1px solid var(--stripe-color);
     }
 
+    &__links-item {
+        @extend %list-anim;
+    }
+
     &__link {
         display: flex;
         justify-content: center;
@@ -60,7 +64,7 @@
 
     &__link-text {
         @extend %caps;
-
+        color: inherit;
         transform: translateY(1px);
     }
 }

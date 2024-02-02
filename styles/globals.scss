@@ -6,6 +6,7 @@
     --grid-container-columns: 2/5;
     --section-padding: 16rem;
     --quad: cubic-bezier(0.25, 0.45, 0, 0.8);
+    --ease-back: cubic-bezier(0.45, 1.45, 0.8, 1);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -56,6 +57,10 @@ img {
     object-fit: cover;
 }
 
+svg * {
+    transition: fill 200ms ease-out;
+}
+
 .container {
     display: grid;
     grid-template-columns: var(--grid-template-columns);
@@ -80,7 +85,7 @@ img {
 
 @media screen and (width < 768px) {
     * {
-        font-size: max(12px, 3.25vw);
+        font-size: clamp(12px, 3.25vw, 16px);
     }
 
     :root {

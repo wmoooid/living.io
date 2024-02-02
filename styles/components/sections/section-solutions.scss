@@ -37,34 +37,46 @@
 
         display: flex;
         align-items: center;
-        gap: 15%;
+        gap: 10%;
 
+        color: var(--main-color);
         background-color: var(--background-color);
         border: 1px solid var(--stripe-color);
         border-right: none;
 
+        cursor: pointer;
+
         &:not(:last-child) {
             border-bottom: none;
         }
+
+        @extend %list-anim;
     }
 
     &__item-caption {
         @extend %body;
+        z-index: 1;
         width: max-content;
         min-width: 6rem;
+        color: inherit;
+        transition: color 1000ms ease-out;
     }
 
     &__item-side {
+        z-index: 1;
         display: flex;
         align-items: center;
         justify-content: space-between;
         width: 100%;
         gap: 10rem;
+        color: inherit;
     }
 
     &__item-heading {
         @extend %h3;
         font-size: 2.5rem;
+        color: inherit;
+        transition: color 1000ms ease-out;
     }
 }
 

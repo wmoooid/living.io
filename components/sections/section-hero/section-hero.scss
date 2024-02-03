@@ -16,6 +16,41 @@
         @extend %h1;
 
         margin: 0 0 1.5rem 0;
+
+        & * {
+            font: inherit;
+        }
+
+        &-main {
+            margin: 0;
+            display: inline;
+        }
+    }
+
+    &__heading-roll {
+        display: inline-grid;
+
+        &-span {
+            grid-row: 1;
+            grid-column: 1;
+
+            opacity: 0;
+            transition: opacity 500ms ease-out, transform 750ms var(--ease-back);
+            transform: rotateX(90deg) translateZ(-3rem);
+            transform-style: preserve-3d;
+
+            text-align: start;
+
+            &.active {
+                transform: translateZ(3rem);
+                opacity: 1;
+            }
+
+            &.hide {
+                transform: rotateX(-90deg) translateZ(-3rem);
+                opacity: 0;
+            }
+        }
     }
 
     &__subheading-layout {

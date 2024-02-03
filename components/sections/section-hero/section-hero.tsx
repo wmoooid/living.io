@@ -1,13 +1,14 @@
-import '@/components/sections/section-hero/section-hero.scss';
+import './section-hero.scss';
 import Image from 'next/image';
 import Icon_arrow from '../../icons/icon-arrow';
+import SectionHeroHeading from './section-hero-heading';
 
 export default function SectionHero() {
     return (
         <section className='section-hero'>
             <div className='container section-hero__container'>
                 <div className='section-hero__text-container'>
-                    <h1 className='section-hero__heading'>The future of home living</h1>
+                    <SectionHeroHeading />
                     <div className='section-hero__subheading-layout'>
                         <p className='section-hero__caption'>
                             LVNG is a new way of thinking about living, buying, and owning real estate, as well for renting purposes.

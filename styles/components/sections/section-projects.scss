@@ -20,18 +20,25 @@
     }
 
     &__projects-wrapper {
+        overflow: hidden;
         grid-column: var(--grid-container-columns);
+    }
+
+    &__projects-slider {
+        display: flex;
+        gap: 2rem;
     }
 
     &__project {
         position: relative;
+        width: 100%;
+        flex: none;
     }
 
     &__project-image {
         position: relative;
 
         height: 42rem;
-        // aspect-ratio: 2/1;
         grid-column: var(--grid-container-columns);
 
         & img {

@@ -1,6 +1,6 @@
-import '@/styles/components/sections/section-hero.scss';
+import '@/components/sections/section-hero/section-hero.scss';
 import Image from 'next/image';
-import Icon_arrow from '../icons/icon-arrow';
+import Icon_arrow from '../../icons/icon-arrow';
 
 export default function SectionHero() {
     return (

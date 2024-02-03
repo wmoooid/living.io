@@ -1,8 +1,8 @@
 'use client';
 
 import { createContext, useState } from 'react';
-import Header from './header';
-import Menu from './menu';
+import Header from '../header/header';
+import Menu from '../menu/menu';
 
 interface NavigationContextProps {
     isMenuOpened: boolean;

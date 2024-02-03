@@ -1,6 +1,6 @@
-import '@/styles/components/sections/section-projects.scss';
+import '@/components/sections/section-projects/section-projects.scss';
 import Image from 'next/image';
-import Icon_arrow from '../icons/icon-arrow';
+import Icon_arrow from '../../icons/icon-arrow';
 
 export default function SectionProjects() {
     return (

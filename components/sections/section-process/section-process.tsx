@@ -1,4 +1,4 @@
-import '@/styles/components/sections/section-process.scss';
+import '@/components/sections/section-process/section-process.scss';
 
 export default function SectionProcess() {
     return (

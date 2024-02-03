@@ -1,8 +1,8 @@
-import '@/styles/components/menu.scss';
-import Icon_arrow from './icons/icon-arrow';
+import '@/components/menu/menu.scss';
+import Icon_arrow from '../icons/icon-arrow';
 import { useLenis } from '@studio-freight/react-lenis';
 import { useContext, useEffect } from 'react';
-import { NavigationContext } from './navigation';
+import { NavigationContext } from '../navigation/navigation';
 
 export default function Menu() {
     const { isMenuOpened } = useContext(NavigationContext);

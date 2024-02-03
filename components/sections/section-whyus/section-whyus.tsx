@@ -1,8 +1,8 @@
 'use client';
 
-import '@/styles/components/sections/section-whyus.scss';
+import '@/components/sections/section-whyus/section-whyus.scss';
 import Image from 'next/image';
-import Icon_arrow from '../icons/icon-arrow';
+import Icon_arrow from '../../icons/icon-arrow';
 import { useState } from 'react';
 
 export default function SectionWhyus() {

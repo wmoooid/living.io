@@ -1,4 +1,4 @@
-import '@/styles/components/sections/section-ownership.scss';
+import '@/components/sections/section-ownership/section-ownership.scss';
 
 export default function SectionOwnership() {
     return (

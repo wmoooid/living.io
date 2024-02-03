@@ -1,10 +1,10 @@
-import '@/styles/components/header.scss';
-import Icon_logo from './icons/icon-logo';
-import Icon_menu from './icons/icon-menu';
-import Icon_lights from './icons/icon-lights';
-import Divider from './divider';
+import '@/components/header/header.scss';
+import Icon_logo from '../icons/icon-logo';
+import Icon_menu from '../icons/icon-menu';
+import Icon_lights from '../icons/icon-lights';
+import Divider from '../divider/divider';
 import { useContext } from 'react';
-import { NavigationContext } from './navigation';
+import { NavigationContext } from '../navigation/navigation';
 
 export default function Header() {
     const { isMenuOpened, setIsMenuOpened } = useContext(NavigationContext);

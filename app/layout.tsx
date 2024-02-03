@@ -1,11 +1,11 @@
-import Header from '@/components/header';
-import Footer from '@/components/footer';
-import Stripes from '@/components/stripes';
+import Header from '@/components/header/header';
+import Footer from '@/components/footer/footer';
+import Stripes from '@/components/stripes/stripes';
 import localFont from 'next/font/local';
-import SmoothScrolling from '@/components/smooth-scrolling';
+import SmoothScrolling from '@/components/smooth-scrolling/smooth-scrolling';
+import Navigation from '@/components/navigation/navigation';
 import '@/node_modules/normalize.css';
 import '@/styles/globals.scss';
-import Navigation from '@/components/navigation';
 
 const Muller = localFont({
     src: [

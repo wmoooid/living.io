@@ -1,10 +1,10 @@
-import '@/styles/components/sections/section-innovation.scss';
-import Icon_comfort from '../icons/icon-comfort';
-import Icon_quality from '../icons/icon-quality';
-import Icon_web3 from '../icons/icon-web3';
-import Icon_energy from '../icons/icon-energy';
-import Icon_marketplace from '../icons/icon-marketplace';
-import Icon_price from '../icons/icon-price';
+import '@/components/sections/section-innovation/section-innovation.scss';
+import Icon_comfort from '../../icons/icon-comfort';
+import Icon_quality from '../../icons/icon-quality';
+import Icon_web3 from '../../icons/icon-web3';
+import Icon_energy from '../../icons/icon-energy';
+import Icon_marketplace from '../../icons/icon-marketplace';
+import Icon_price from '../../icons/icon-price';
 
 export default function SectionInnovation() {
     return (

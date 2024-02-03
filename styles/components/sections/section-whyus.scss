@@ -117,21 +117,47 @@
                 opacity: 1;
             }
         }
+
+        &.active {
+            .section-whyus__bullets-item-icon {
+                transform: translateX(-1rem);
+                opacity: 1;
+            }
+        }
     }
 
     &__bullets-description {
         grid-column: 3/5;
 
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
+        display: grid;
 
-        padding: 10% 24% 10% 12%;
-        color: #fff;
+        padding: 10% 20% 10% 12%;
         background-color: #000;
 
         position: relative;
         z-index: 1;
+    }
+
+    &__bullets-slide {
+        grid-row: 1;
+        grid-column: 1;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 1.5rem;
+
+        color: #fff;
+
+        opacity: 0;
+        pointer-events: none;
+        transform: translateX(-2rem);
+
+        &.active {
+            opacity: 1;
+            transform: translateX(0);
+            transition: transform 500ms var(--ease-back);
+        }
     }
 
     &__bullets-heading {

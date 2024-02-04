@@ -35,9 +35,11 @@
     &__item {
         padding: 5rem 2.5rem;
 
-        display: flex;
-        align-items: center;
-        gap: 10%;
+        display: grid;
+        grid-template-columns: 1fr 5fr 1.5rem;
+        grid-template-rows: max-content 0fr;
+        column-gap: 2rem;
+        row-gap: 0;
 
         color: var(--main-color);
         background-color: var(--background-color);
@@ -46,8 +48,19 @@
 
         cursor: pointer;
 
+        transition: grid-template-rows 500ms var(--quad), grid-gap 400ms var(--quad);
+
         &:not(:last-child) {
             border-bottom: none;
+        }
+
+        &.active {
+            grid-template-rows: max-content 1fr;
+            row-gap: 2rem;
+
+            & .section-solutions__item-spoiler {
+                opacity: 1;
+            }
         }
 
         @extend %list-anim;
@@ -55,9 +68,11 @@
 
     &__item-caption {
         @extend %body;
+
         z-index: 1;
         width: max-content;
         min-width: 6rem;
+
         color: inherit;
         transition: color 1000ms ease-out;
     }
@@ -78,6 +93,24 @@
         color: inherit;
         transition: color 1000ms ease-out;
     }
+
+    &__item-spoiler {
+        overflow: hidden;
+
+        z-index: 1;
+        color: inherit;
+
+        opacity: 0;
+        transition: opacity 300ms ease-out;
+
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    &__item-text {
+        @extend %body;
+        color: inherit;
+    }
 }
 
 @media screen and (width < 768px) {
@@ -95,10 +128,34 @@
             flex-direction: column;
             gap: 1rem;
             padding: 2rem;
+
+            grid-template-rows: max-content max-content 0fr;
+
+            &.active {
+                grid-template-rows: max-content max-content 1fr;
+                row-gap: 2rem;
+            }
+        }
+
+        &__item-caption {
+            grid-row: 1;
+            grid-column: 1;
+        }
+
+        &__item-button {
+            grid-row: 1;
+            grid-column: 4;
         }
 
         &__item-heading {
+            grid-row: 2;
+            grid-column: 1/5;
             font-size: 1.75rem;
+        }
+
+        &__item-spoiler {
+            grid-row: 3;
+            grid-column: 1/5;
         }
 
         &__item-side {

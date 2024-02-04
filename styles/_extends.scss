@@ -86,7 +86,8 @@
 
     & small,
     & h3,
-    & span {
+    & span,
+    & p {
         z-index: 1;
         transition: transform 750ms var(--quad), color 1200ms var(--quad);
     }
@@ -117,7 +118,8 @@
         }
 
         & small,
-        & h3 {
+        & h3,
+        & p {
             transform: translateX(2rem);
             will-change: transform;
         }
@@ -143,5 +145,24 @@
 
     %h4 {
         font-size: 1.25rem;
+    }
+
+    %list-anim {
+        &:hover {
+            color: unset;
+            &::before {
+                transform: scale(0);
+            }
+
+            & small,
+            & h3,
+            & p {
+                transform: translateX(0);
+            }
+
+            & svg * {
+                fill: #000;
+            }
+        }
     }
 }

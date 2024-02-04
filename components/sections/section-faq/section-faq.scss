@@ -44,16 +44,29 @@
 
         display: grid;
         grid-template-columns: 1fr 1.5rem;
+        grid-template-rows: max-content 0fr;
         align-items: center;
-        gap: 3rem;
+        column-gap: 2rem;
+        row-gap: 0;
 
         border: 1px solid var(--stripe-color);
         border-right: none;
 
         cursor: pointer;
 
+        transition: grid-template-rows 500ms var(--quad), grid-gap 400ms var(--quad);
+
         &:not(:last-child) {
             border-bottom: none;
+        }
+
+        &.active {
+            grid-template-rows: max-content 1fr;
+            row-gap: 2rem;
+
+            & .section-faq__spoiler-wrapper {
+                opacity: 1;
+            }
         }
 
         @extend %list-anim;
@@ -66,8 +79,18 @@
         color: inherit;
     }
 
-    &__spoiler-wrapper {
-        display: none;
+    & .section-faq__spoiler-wrapper {
+        color: inherit;
+        z-index: 1;
+        overflow: hidden;
+        opacity: 0;
+        transition: opacity 200ms ease-out;
+        padding-right: 2rem;
+    }
+
+    &__item-text {
+        color: inherit;
+        @extend %body;
     }
 }
 

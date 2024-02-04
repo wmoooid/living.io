@@ -1,4 +1,3 @@
-import Header from '@/components/header/header';
 import Footer from '@/components/footer/footer';
 import Stripes from '@/components/stripes/stripes';
 import localFont from 'next/font/local';

@@ -1,9 +1,14 @@
+'use client';
+
 import './section-hero.scss';
 import Image from 'next/image';
 import Icon_arrow from '../../icons/icon-arrow';
 import SectionHeroHeading from './section-hero-heading';
+import { useLenis } from '@studio-freight/react-lenis';
 
 export default function SectionHero() {
+    const lenis = useLenis();
+
     return (
         <section className='section-hero'>
             <div className='container section-hero__container'>
@@ -22,10 +27,10 @@ export default function SectionHero() {
                     <div className='section-hero__slider-wrapper'>
                         <Image src={'/img/hero-image.jpg'} alt={'LIVING'} fill={true} />
                     </div>
-                    <a href='#' className='section-hero__slider-button'>
+                    <span onClick={() => lenis.scrollTo('.section-whyus__container', { offset: -100 })} className='section-hero__slider-button'>
                         <Icon_arrow direction='bottom' />
                         <span>Learn more</span>
-                    </a>
+                    </span>
                 </div>
             </div>
         </section>

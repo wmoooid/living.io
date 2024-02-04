@@ -10,6 +10,7 @@
     },
     "dependencies": {
         "@studio-freight/react-lenis": "^0.0.43",
+        "lottie-react": "^2.4.0",
         "next": "14.1.0",
         "react": "^18",
         "react-dom": "^18",

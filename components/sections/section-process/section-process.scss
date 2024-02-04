@@ -45,8 +45,8 @@
     }
 
     &__grid-image {
-        width: 60%;
-        max-width: 16rem;
+        width: 100%;
+        max-width: 18rem;
 
         & svg {
             width: 100%;
@@ -83,8 +83,15 @@
 
 @media screen and (width < 768px) {
     .section-process {
+        &__container {
+            row-gap: 3rem;
+        }
         &__grid-list {
             grid-template-columns: repeat(1, 1fr);
+        }
+        &__grid-item {
+            gap: 1rem;
+            padding: 0 5%;
         }
     }
 }

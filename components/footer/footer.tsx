@@ -42,16 +42,16 @@ export default function Footer() {
                     <small className='footer__navigation-subheading'>navigation</small>
                     <ul className='footer__navigation-list'>
                         <li className='footer__navigation-item'>Home</li>
-                        <li className='footer__navigation-item'>Order</li>
-                        <li className='footer__navigation-item'>Partnership</li>
+                        <li className='footer__navigation-item soon'>Order</li>
+                        <li className='footer__navigation-item soon'>Partnership</li>
                     </ul>
                 </div>
                 <div className='footer__projects-wrapper'>
                     <small className='footer__projects-subheading'>Projects</small>
                     <ul className='footer__projects-list'>
                         <li className='footer__projects-item'>Alpha</li>
-                        <li className='footer__projects-item'>Eta</li>
-                        <li className='footer__projects-item'>Theta</li>
+                        <li className='footer__projects-item soon'>Eta</li>
+                        <li className='footer__projects-item soon'>Theta</li>
                     </ul>
                 </div>
                 <div className='footer__copyright-wrapper'>

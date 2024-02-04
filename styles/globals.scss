@@ -73,6 +73,19 @@ svg * {
     background-color: var(--stripe-color);
 }
 
+.soon {
+    opacity: 0.5;
+    pointer-events: none;
+    &::after {
+        content: 'Coming soon';
+        font-size: 0.625rem;
+        text-transform: uppercase;
+        font-weight: 300;
+
+        margin-inline-start: 0.5rem;
+    }
+}
+
 @media screen and (width < 1200px) {
     * {
         font-size: max(14px, 1vw);
@@ -96,5 +109,11 @@ svg * {
 
     .mobile-hidden {
         display: none;
+    }
+
+    .soon {
+        &::after {
+            content: 'Soon';
+        }
     }
 }

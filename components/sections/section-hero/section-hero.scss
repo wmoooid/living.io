@@ -113,12 +113,20 @@
         grid-column: 4/6;
 
         line-height: 1;
-        pointer-events: none;
+
+        cursor: pointer;
 
         background-color: var(--background-color);
 
         & > span {
             font-size: inherit;
+        }
+
+        &:hover * {
+            opacity: 0.7;
+        }
+        & > * {
+            transition: opacity 200ms ease-out;
         }
     }
 }

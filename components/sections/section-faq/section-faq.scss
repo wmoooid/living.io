@@ -65,6 +65,7 @@
             row-gap: 2rem;
 
             & .section-faq__spoiler-wrapper {
+                transition: opacity 700ms ease-out;
                 opacity: 1;
             }
         }
@@ -81,11 +82,12 @@
 
     & .section-faq__spoiler-wrapper {
         color: inherit;
-        z-index: 1;
         overflow: hidden;
+        z-index: 1;
         opacity: 0;
-        transition: opacity 200ms ease-out;
         padding-right: 2rem;
+
+        transition: opacity 100ms ease-out;
     }
 
     &__item-text {
@@ -102,6 +104,10 @@
 
         &__image-wrapper {
             display: none;
+        }
+
+        & .section-faq__spoiler-wrapper {
+            padding-right: 0;
         }
     }
 }

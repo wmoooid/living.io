@@ -39,8 +39,6 @@
             transform: rotateX(90deg) translateZ(-3rem);
             transform-style: preserve-3d;
 
-            text-align: start;
-
             &.active {
                 transform: translateZ(3rem);
                 opacity: 1;

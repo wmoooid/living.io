@@ -27,6 +27,8 @@
     &__projects-slider {
         display: flex;
         gap: 2rem;
+
+        transition: transform 750ms var(--ease-back);
     }
 
     &__project {
@@ -149,6 +151,9 @@
         align-items: center;
         gap: 0.5rem;
 
+        background: none;
+        border: none;
+
         cursor: pointer;
         transition: opacity 200ms ease-in-out;
 
@@ -158,6 +163,12 @@
 
         & span {
             transform: translateY(1px);
+        }
+
+        &:disabled,
+        &[disabled] {
+            opacity: 0.3;
+            pointer-events: none;
         }
     }
 }

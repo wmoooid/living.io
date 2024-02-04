@@ -1,4 +1,4 @@
-import '@/components/sections/section-innovation/section-innovation.scss';
+import './section-innovation.scss';
 import Icon_comfort from '../../icons/icon-comfort';
 import Icon_quality from '../../icons/icon-quality';
 import Icon_web3 from '../../icons/icon-web3';

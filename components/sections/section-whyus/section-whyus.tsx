@@ -1,6 +1,6 @@
 'use client';
 
-import '@/components/sections/section-whyus/section-whyus.scss';
+import './section-whyus.scss';
 import Image from 'next/image';
 import Icon_arrow from '../../icons/icon-arrow';
 import { useState } from 'react';

@@ -5,15 +5,19 @@ import Icon_lights from '../icons/icon-lights';
 import Divider from '../divider/divider';
 import { useContext } from 'react';
 import { NavigationContext } from '../navigation/navigation';
+import { useLenis } from '@studio-freight/react-lenis';
 
 export default function Header() {
     const { isMenuOpened, setIsMenuOpened } = useContext(NavigationContext);
+    const lenis = useLenis();
 
     const handleClick = () => {
         if (isMenuOpened) {
             setIsMenuOpened(false);
+            lenis && (lenis.isStopped = false);
         } else {
             setIsMenuOpened(true);
+            lenis && (lenis.isStopped = true);
         }
     };
 

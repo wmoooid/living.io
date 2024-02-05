@@ -13,7 +13,7 @@ function SectionFaqItem({ heading, text }: ItemProps) {
     const [isOpened, setIsOpened] = useState(false);
 
     return (
-        <li onClick={() => setIsOpened(() => !isOpened)} className={isOpened ? 'section-faq__item active' : 'section-faq__item'}>
+        <li onClick={() => setIsOpened((curr) => !curr)} className={isOpened ? 'section-faq__item active' : 'section-faq__item'}>
             <h3 className='section-faq__item-heading'>{heading}</h3>
             <span className='section-faq__item-button'>
                 <Icon_accordion />

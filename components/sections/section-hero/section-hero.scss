@@ -129,6 +129,14 @@
             transition: opacity 200ms ease-out;
         }
     }
+
+    & img {
+        animation-duration: 30s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        animation-name: slide;
+        animation-timing-function: linear;
+    }
 }
 
 @media screen and (width < 768px) {
@@ -165,5 +173,15 @@
         &__slider-button {
             display: none;
         }
+    }
+}
+
+@keyframes slide {
+    0% {
+        object-position: top;
+    }
+
+    100% {
+        object-position: bottom;
     }
 }

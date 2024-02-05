@@ -83,7 +83,7 @@ export default function SectionProjects() {
     const lastObject = OBJECTS.length - 1;
 
     const handleClick = (dir: number) => {
-        setCurrentObject(() => currentObject + dir);
+        setCurrentObject((curr) => curr + dir);
     };
 
     return (

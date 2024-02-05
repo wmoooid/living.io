@@ -23,7 +23,7 @@ export default function SectionHeroHeading() {
 
     const changeWord = () => {
         if (currentWord < ITEMS.length - 1) {
-            setCurrentWord(() => currentWord + 1);
+            setCurrentWord((curr) => curr + 1);
         } else {
             setCurrentWord(0);
         }

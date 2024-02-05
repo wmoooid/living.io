@@ -38,7 +38,7 @@ function SectionSolutionsItem({ caption, heading, text }: ItemProps) {
     const [isOpened, setIsOpened] = useState(false);
 
     return (
-        <li onClick={() => setIsOpened(() => !isOpened)} className={isOpened ? 'section-solutions__item active' : 'section-solutions__item'}>
+        <li onClick={() => setIsOpened((curr) => !curr)} className={isOpened ? 'section-solutions__item active' : 'section-solutions__item'}>
             <small className='section-solutions__item-caption'>{caption}</small>
             <h3 className='section-solutions__item-heading'>{heading}</h3>
             <span className='section-solutions__item-button'>

@@ -3,9 +3,9 @@
 import { ReactLenis } from '@studio-freight/react-lenis';
 import { ReactNode } from 'react';
 
-interface props {
+type props = {
     children: ReactNode;
-}
+};
 
 function SmoothScrolling({ children }: props) {
     return (

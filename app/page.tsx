@@ -1,3 +1,4 @@
+import PopupForm from '@/components/popup-form/popup-form';
 import SectionContact from '@/components/sections/section-contact/section-contact';
 import SectionFaq from '@/components/sections/section-faq/section-faq';
 import SectionHero from '@/components/sections/section-hero/section-hero';

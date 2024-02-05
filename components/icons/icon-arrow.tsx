@@ -1,8 +1,8 @@
-interface props {
+type IconProps = {
     direction: 'top' | 'right' | 'left' | 'bottom' | 'diagonal';
-}
+};
 
-export default function Icon_arrow({ direction }: props) {
+export default function Icon_arrow({ direction }: IconProps) {
     let rotate;
 
     switch (direction) {

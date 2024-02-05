@@ -2,14 +2,14 @@ import './section-projects.scss';
 import Image from 'next/image';
 import { objectData } from './section-projects';
 
-interface ItemProps {
+type ItemProps = {
     data: objectData;
-}
+};
 
-interface ListProps {
+type ListProps = {
     objectList: objectData[];
     currentObject: number;
-}
+};
 
 function SectionProjectsItem({ data }: ItemProps) {
     return (

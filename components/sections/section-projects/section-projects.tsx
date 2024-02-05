@@ -3,9 +3,9 @@
 import './section-projects.scss';
 import Icon_arrow from '../../icons/icon-arrow';
 import SectionProjectsList from './section-projects-list';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
-export interface objectData {
+export type objectData = {
     imageSrc: string;
     name: string;
     description: string;
@@ -15,7 +15,7 @@ export interface objectData {
     }[];
     features: string[];
     price: string;
-}
+};
 
 const OBJECTS: objectData[] = [
     {

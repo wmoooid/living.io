@@ -4,11 +4,11 @@ import './section-solutions.scss';
 import Icon_accordion from '../../icons/icon-accordion';
 import { useState } from 'react';
 
-interface ItemProps {
+type ItemProps = {
     caption: string;
     heading: string;
     text: string;
-}
+};
 
 const LIST: ItemProps[] = [
     {

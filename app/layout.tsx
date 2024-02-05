@@ -5,6 +5,8 @@ import SmoothScrolling from '@/components/smooth-scrolling/smooth-scrolling';
 import Navigation from '@/components/navigation/navigation';
 import '@/node_modules/normalize.css';
 import '@/styles/globals.scss';
+import PopupContextProvider from '@/components/popup-form/popup-context';
+import PopupForm from '@/components/popup-form/popup-form';
 
 const Muller = localFont({
     src: [
@@ -40,12 +42,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     return (
         <html lang='ru' className={Muller.className}>
             <body>
-                <SmoothScrolling>
-                    <Navigation />
-                    <main>{children}</main>
-                    <Footer />
-                    <Stripes />
-                </SmoothScrolling>
+                <PopupContextProvider>
+                    <SmoothScrolling>
+                        <Navigation />
+                        <main>{children}</main>
+                        <Footer />
+                        <Stripes />
+                        <PopupForm />
+                    </SmoothScrolling>
+                </PopupContextProvider>
             </body>
         </html>
     );

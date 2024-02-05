@@ -1,10 +1,10 @@
 import Icon_arrow from '../icons/icon-arrow';
 import './menu.scss';
 
-interface props {
+type SocialItemProps = {
     name: string;
     // href: string;
-}
+};
 
 const ITEMS = [
     { name: 'Discord', href: '#' },
@@ -13,7 +13,7 @@ const ITEMS = [
     { name: 'Telegram', href: '#' },
 ];
 
-function MenuSocialsItem({ name }: props) {
+function MenuSocialsItem({ name }: SocialItemProps) {
     return (
         <li className='menu__socials-item'>
             <span className='menu__socials-item-text'>{name}</span>

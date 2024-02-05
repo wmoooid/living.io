@@ -1,11 +1,11 @@
 import './menu.scss';
 
-interface props {
+type NavItemProps = {
     index: number;
     name: string;
     href: string;
     soon: boolean;
-}
+};
 
 const ITEMS = [
     { name: 'Home', href: '#', soon: false },
@@ -16,7 +16,7 @@ const ITEMS = [
     { name: 'Partnership', href: '#', soon: true },
 ];
 
-function MenuNavItem({ index, name, href, soon }: props) {
+function MenuNavItem({ index, name, href, soon }: NavItemProps) {
     return (
         <li className='menu__nav-item'>
             <small className='menu__nav-item-num'>{'0' + index}</small>

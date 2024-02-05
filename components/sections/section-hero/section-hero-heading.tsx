@@ -5,13 +5,13 @@ import './section-hero.scss';
 
 const ITEMS = ['living', 'owning', 'renting'];
 
-interface props {
+type HeadingSapnProps = {
     word: string;
     isActive: boolean;
     shouldHide: boolean;
-}
+};
 
-function SectionHeroHeadingSpan({ word, isActive, shouldHide }: props) {
+function SectionHeroHeadingSpan({ word, isActive, shouldHide }: HeadingSapnProps) {
     if (isActive) return <span className='section-hero__heading-roll-span active'>{word}</span>;
     if (shouldHide) return <span className='section-hero__heading-roll-span hide'>{word}</span>;
     return <span className='section-hero__heading-roll-span'>{word}</span>;

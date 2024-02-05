@@ -4,10 +4,10 @@ import './section-faq.scss';
 import Icon_accordion from '../../icons/icon-accordion';
 import { useState } from 'react';
 
-interface ItemProps {
+type ItemProps = {
     heading: string;
     text: string;
-}
+};
 
 function SectionFaqItem({ heading, text }: ItemProps) {
     const [isOpened, setIsOpened] = useState(false);

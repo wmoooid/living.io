@@ -1,8 +1,8 @@
-interface props {
+type IconProps = {
     icon: 'discord' | 'medium' | 'linkedin' | 'telegram';
-}
+};
 
-export default function Icon_socials({ icon }: props) {
+export default function Icon_socials({ icon }: IconProps) {
     switch (icon) {
         case 'discord':
             return (

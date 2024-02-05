@@ -1,4 +1,4 @@
-import '@/components/header/header.scss';
+import './header.scss';
 import Icon_logo from '../icons/icon-logo';
 import Icon_menu from '../icons/icon-menu';
 import Icon_lights from '../icons/icon-lights';

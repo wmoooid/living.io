@@ -2,6 +2,7 @@
     --background-color: #fff;
     --main-color: #1e1e1c;
     --stripe-color: rgba(201, 201, 201, 0.5);
+    --dark-color: #121211;
     --grid-template-columns: 10% 1fr 1fr 1fr 10%;
     --grid-container-columns: 2/5;
     --section-padding: 16rem;
@@ -11,10 +12,57 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
+        --background-color: #1e1e1c;
+        --main-color: #fff;
+        --stripe-color: rgba(94, 94, 94, 0.5);
     }
 
     html {
         color-scheme: dark;
+    }
+
+    svg {
+        filter: invert(1) contrast(0.7);
+    }
+
+    img {
+        filter: brightness(0.5);
+    }
+}
+
+:root.light {
+    --background-color: #fff;
+    --main-color: #1e1e1c;
+    --stripe-color: rgba(201, 201, 201, 0.5);
+}
+
+html.light {
+    color-scheme: light;
+
+    & svg {
+        filter: none;
+    }
+
+    & img {
+        filter: none;
+    }
+}
+
+:root.dark {
+    --background-color: #1e1e1c;
+    --main-color: #fff;
+    --stripe-color: rgba(94, 94, 94, 0.5);
+}
+
+html.dark {
+    color-scheme: dark;
+
+    & svg {
+        filter: invert(1) contrast(0.7);
+    }
+
+    & img {
+        filter: brightness(0.5);
     }
 }
 

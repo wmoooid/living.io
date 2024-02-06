@@ -9,7 +9,6 @@ export default function PopupForm() {
     const overlayRef = useRef(null);
 
     const handleClick = (event: React.MouseEvent<HTMLElement>) => {
-        console.log(event);
         if (event.target === overlayRef.current) setIsPopupOpened(false);
     };
 
@@ -36,7 +35,7 @@ export default function PopupForm() {
                         <input className='popup-form__checkbox' type='checkbox' name='agree' id='agree' />
                         <div className='popup-form__checkbox-pseudo'>
                             <svg xmlns='http://www.w3.org/2000/svg' width='1rem' height='0.75rem' viewBox='0 0 16 12' fill='none'>
-                                <path d='M1 7L5 11L15 1' stroke='white' stroke-linecap='round' stroke-linejoin='round' />
+                                <path d='M1 7L5 11L15 1' stroke='white' strokeLinecap='round' strokeLinejoin='round' />
                             </svg>
                         </div>
                         <span className='popup-form__checkbox-text'>

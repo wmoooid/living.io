@@ -7,6 +7,7 @@ import '@/node_modules/normalize.css';
 import '@/styles/globals.scss';
 import PopupContextProvider from '@/components/popup-form/popup-context';
 import PopupForm from '@/components/popup-form/popup-form';
+import ThemeContextProvider from '@/components/theme-context/theme-context';
 
 const Muller = localFont({
     src: [
@@ -42,6 +43,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     return (
         <html lang='ru' className={Muller.className}>
             <body>
+                {/* <ThemeContextProvider> */}
                 <PopupContextProvider>
                     <SmoothScrolling>
                         <Navigation />
@@ -51,6 +53,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                         <PopupForm />
                     </SmoothScrolling>
                 </PopupContextProvider>
+                {/* </ThemeContextProvider> */}
             </body>
         </html>
     );

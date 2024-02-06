@@ -11,13 +11,25 @@ export default function Header() {
     const { isMenuOpened, setIsMenuOpened } = useContext(NavigationContext);
     const lenis = useLenis();
 
-    const handleClick = () => {
+    const handleClickMenu = () => {
         if (isMenuOpened) {
             setIsMenuOpened(false);
             lenis && (lenis.isStopped = false);
         } else {
             setIsMenuOpened(true);
             lenis && (lenis.isStopped = true);
+        }
+    };
+
+    const handleClickLight = () => {
+        const documentClass = document.documentElement.classList;
+
+        if (documentClass.contains('dark')) {
+            documentClass.remove('dark');
+            documentClass.add('light');
+        } else {
+            documentClass.remove('light');
+            documentClass.add('dark');
         }
     };
 
@@ -28,14 +40,14 @@ export default function Header() {
                     <Icon_logo />
                 </span>
                 <ul className='header__nav-list'>
-                    <li className='header__nav-item' onClick={handleClick}>
+                    <li className='header__nav-item' onClick={handleClickMenu}>
                         <span className='header__nav-text'>Menu</span>
                         <span className='header__nav-icon'>
                             <Icon_menu />
                         </span>
                     </li>
                     <Divider />
-                    <li className='header__nav-item'>
+                    <li className='header__nav-item' onClick={handleClickLight}>
                         <span className='header__nav-text'>Lights off</span>
                         <span className='header__nav-icon'>
                             <Icon_lights theme='light' />

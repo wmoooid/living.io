@@ -24,7 +24,7 @@ export default function SectionHero() {
                 </div>
                 <div className='section-hero__slider'>
                     <div className='section-hero__slider-wrapper'>
-                        <Image src={'/img/hero-image.jpg'} alt={'LIVING'} fill={true} />
+                        <Image src={'/img/hero-image.jpg'} alt={'LIVING'} fill={true} sizes='100vw' priority />
                     </div>
                     <span onClick={() => lenis.scrollTo('.section-whyus__container', { offset: -100 })} className='section-hero__slider-button'>
                         <Icon_arrow direction='bottom' />

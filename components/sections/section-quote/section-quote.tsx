@@ -20,7 +20,12 @@ export default function SectionQuote() {
                         </q>
                         <div className='section-quote__person'>
                             <div className='section-quote__person-image'>
-                                <Image src={'/img/quote-avatar-1.jpg'} alt={'Witold Borek'} fill={true} />
+                                <Image
+                                    src={'/img/quote-avatar-1.jpg'}
+                                    alt={'Witold Borek'}
+                                    fill={true}
+                                    sizes='(max-width: 768px) 200px, (max-width: 1200px) 400px'
+                                />
                             </div>
                             <div className='section-quote__person-text'>
                                 <strong className='section-quote__person-name'>Witold Borek</strong>

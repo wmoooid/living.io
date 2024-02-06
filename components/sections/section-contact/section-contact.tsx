@@ -7,7 +7,7 @@ export default function SectionContact() {
         <section className='section-contact'>
             <div className='container section-contact__container'>
                 <div className='section-contact__banner-wrapper'>
-                    <Image src={'/img/contact-image.jpg'} alt='contact' fill={true} />
+                    <Image src={'/img/contact-image.jpg'} alt='contact' fill={true} sizes='100vw' />
                     <div className='section-contact__heading-wrapper'>
                         <small className='section-contact__top-caption'>Contact</small>
                         <h2 className='section-contact__heading'>Get in touch</h2>

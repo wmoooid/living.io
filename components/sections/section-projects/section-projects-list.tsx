@@ -16,7 +16,7 @@ function SectionProjectsItem({ data }: ItemProps) {
     return (
         <li className='section-projects__project'>
             <div className='section-projects__project-image'>
-                <Image src={data.imageSrc} alt='Project' fill={true} />
+                <Image src={data.imageSrc} alt='Project' fill={true} sizes='(max-width: 768px) 100vw, (min-width: 768px) 70vw' />
             </div>
             <div className='section-projects__description-wrapper'>
                 <div className='section-projects__description'>

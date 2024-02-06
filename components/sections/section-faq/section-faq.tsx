@@ -13,7 +13,7 @@ export default function SectionFaq() {
                 </div>
                 <SectionFaqList />
                 <div className='section-faq__image-wrapper'>
-                    <Image src={'/img/faq-image.jpg'} alt='faq' fill={true} />
+                    <Image src={'/img/faq-image.jpg'} alt='faq' fill={true} sizes='30vw' />
                 </div>
             </div>
         </section>

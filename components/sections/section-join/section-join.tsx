@@ -7,7 +7,7 @@ export default function SectionJoin() {
         <section className='section-join'>
             <div className='container section-join__container'>
                 <div className='section-join__image-wrapper'>
-                    <Image src={'/img/join-image.jpg'} alt='Join us' fill={true} />
+                    <Image src={'/img/join-image.jpg'} alt='Join us' fill={true} sizes='30vw' />
                 </div>
                 <div className='section-join__content-wrapper'>
                     <div className='section-join__heading-wrapper'>

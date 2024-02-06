@@ -87,6 +87,7 @@
     }
 
     &__slider-wrapper {
+        position: relative;
         grid-column: 1/6;
         width: 100%;
         height: 100%;

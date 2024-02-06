@@ -27,6 +27,9 @@
     }
 
     &__banner-image {
+        position: absolute;
+        inset: 0;
+
         &::after {
             content: '';
             position: absolute;

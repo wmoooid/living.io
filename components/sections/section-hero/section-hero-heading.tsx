@@ -39,7 +39,7 @@ export default function SectionHeroHeading() {
             <h1 className='section-hero__heading-main'>The future of home </h1>
             <span className='section-hero__heading-roll'>
                 {ITEMS.map((el, i) => (
-                    <SectionHeroHeadingSpan word={el} isActive={currentWord === i} shouldHide={prevWord === i} />
+                    <SectionHeroHeadingSpan key={i} word={el} isActive={currentWord === i} shouldHide={prevWord === i} />
                 ))}
             </span>
         </div>

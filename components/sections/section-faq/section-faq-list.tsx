@@ -51,8 +51,8 @@ const LIST: ItemProps[] = [
 export default function SectionFaqList() {
     return (
         <ul className='section-faq__list'>
-            {LIST.map((el) => (
-                <SectionFaqItem heading={el.heading} text={el.text} />
+            {LIST.map((el, i) => (
+                <SectionFaqItem key={i} heading={el.heading} text={el.text} />
             ))}
         </ul>
     );

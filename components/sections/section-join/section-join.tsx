@@ -1,4 +1,5 @@
-import '@/components/sections/section-join/section-join.scss';
+import CTAButton from '@/components/cta-button/cta-button';
+import './section-join.scss';
 import Image from 'next/image';
 
 export default function SectionJoin() {
@@ -13,9 +14,7 @@ export default function SectionJoin() {
                         <small className='section-join__top-caption'>PARTNERSHIP</small>
                         <h2 className='section-join__heading'>Join the housing revolution</h2>
                     </div>
-                    <a href='#' className='section-join__cta-button'>
-                        Become a partner
-                    </a>
+                    <CTAButton className='section-join__cta-button' text='Become a partner' />
                 </div>
             </div>
         </section>

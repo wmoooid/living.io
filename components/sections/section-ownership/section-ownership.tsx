@@ -2,6 +2,7 @@
 
 import Lottie from 'lottie-react';
 import lottieImage from '@/public/lottie/section-ownership__lottie.json';
+import CTAButton from '@/components/cta-button/cta-button';
 import './section-ownership.scss';
 
 export default function SectionOwnership() {
@@ -29,9 +30,7 @@ export default function SectionOwnership() {
                             </div>
                         </div>
                         <p className='section-ownership__text'>Join our community and stay up-to-date with the projects development.</p>
-                        <a href='#' className='section-ownership__cta-button'>
-                            Join
-                        </a>
+                        <CTAButton className='section-ownership__cta-button' text='Join' />
                     </div>
                     <div className='section-ownership__image-wrapper'>
                         <Lottie animationData={lottieImage} />

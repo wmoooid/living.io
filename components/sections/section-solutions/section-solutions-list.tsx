@@ -54,8 +54,8 @@ function SectionSolutionsItem({ caption, heading, text }: ItemProps) {
 export default function SectionSolutionsList() {
     return (
         <ul className='section-solutions__list'>
-            {LIST.map((el) => (
-                <SectionSolutionsItem caption={el.caption} heading={el.heading} text={el.text} />
+            {LIST.map((el, i) => (
+                <SectionSolutionsItem key={i} caption={el.caption} heading={el.heading} text={el.text} />
             ))}
         </ul>
     );

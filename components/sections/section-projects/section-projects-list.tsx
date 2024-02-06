@@ -1,6 +1,7 @@
 import './section-projects.scss';
 import Image from 'next/image';
 import { objectData } from './section-projects';
+import CTAButton from '@/components/cta-button/cta-button';
 
 type ItemProps = {
     data: objectData;
@@ -23,8 +24,8 @@ function SectionProjectsItem({ data }: ItemProps) {
                         <h3 className='section-projects__description-heading'>{data.name}</h3>
                         <p className='section-projects__description-text'>{data.description}</p>
                         <ul className='section-projects__params-list'>
-                            {data.params.map((el) => (
-                                <li className='section-projects__params-item'>
+                            {data.params.map((el, i) => (
+                                <li key={i} className='section-projects__params-item'>
                                     <span className='section-projects__params-name'>{el.name}</span>
                                     <span className='section-projects__params-value'>{el.value}</span>
                                 </li>
@@ -33,8 +34,10 @@ function SectionProjectsItem({ data }: ItemProps) {
                         <div className='section-projects__features-wrapper'>
                             <h5 className='section-projects__features-heading'>Key features:</h5>
                             <ol className='section-projects__features-list'>
-                                {data.features.map((el) => (
-                                    <li className='section-projects__features-item'>{el}</li>
+                                {data.features.map((el, i) => (
+                                    <li key={i} className='section-projects__features-item'>
+                                        {el}
+                                    </li>
                                 ))}
                             </ol>
                             <div className='section-projects__pricing-wrapepr'>
@@ -43,9 +46,8 @@ function SectionProjectsItem({ data }: ItemProps) {
                             </div>
                         </div>
                     </div>
-                    <a href='#' className='section-projects__cta-button'>
-                        Learn more
-                    </a>
+
+                    <CTAButton className='section-projects__cta-button' text='Learn more' />
                 </div>
             </div>
         </li>
@@ -56,8 +58,8 @@ export default function SectionProjectsList({ objectList, currentObject }: ListP
     return (
         <div className='section-projects__projects-wrapper'>
             <ul style={{ transform: `translateX(calc((-100% - 2rem) * ${currentObject}))` }} className='section-projects__projects-slider'>
-                {objectList.map((el) => (
-                    <SectionProjectsItem data={el} />
+                {objectList.map((el, i) => (
+                    <SectionProjectsItem key={i} data={el} />
                 ))}
             </ul>
         </div>

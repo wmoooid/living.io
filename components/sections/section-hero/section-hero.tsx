@@ -5,11 +5,9 @@ import Image from 'next/image';
 import Icon_arrow from '../../icons/icon-arrow';
 import SectionHeroHeading from './section-hero-heading';
 import { useLenis } from '@studio-freight/react-lenis';
-import { PopupContext } from '@/components/popup-form/popup-context';
-import { useContext } from 'react';
+import CTAButton from '@/components/cta-button/cta-button';
 
 export default function SectionHero() {
-    const { setIsPopupOpened } = useContext(PopupContext);
     const lenis = useLenis();
 
     return (
@@ -21,9 +19,7 @@ export default function SectionHero() {
                         <p className='section-hero__caption'>
                             LVNG is a new way of thinking about living, buying, and owning real estate, as well for renting purposes.
                         </p>
-                        <span onClick={() => setIsPopupOpened(true)} className='section-hero__order-button'>
-                            Order now
-                        </span>
+                        <CTAButton className='section-hero__order-button' text='Order now' />
                     </div>
                 </div>
                 <div className='section-hero__slider'>

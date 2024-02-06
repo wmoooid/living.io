@@ -109,6 +109,11 @@ svg * {
     transition: fill 200ms ease-out;
 }
 
+button {
+    background-color: unset;
+    border: none;
+}
+
 .container {
     display: grid;
     grid-template-columns: var(--grid-template-columns);

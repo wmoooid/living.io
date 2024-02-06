@@ -29,8 +29,8 @@ export default function MenuSocials() {
         <div className='menu__socials-wrapper'>
             <small className='menu__socials-top-caption'>Socials</small>
             <ul className='menu__socials-list'>
-                {ITEMS.map((el) => (
-                    <MenuSocialsItem name={el.name} />
+                {ITEMS.map((el, i) => (
+                    <MenuSocialsItem key={el.name + i} name={el.name} />
                 ))}
             </ul>
         </div>

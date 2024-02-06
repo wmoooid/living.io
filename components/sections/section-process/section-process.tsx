@@ -1,3 +1,4 @@
+import CTAButton from '@/components/cta-button/cta-button';
 import SectionProcessList from './section-process-list';
 import './section-process.scss';
 
@@ -10,9 +11,7 @@ export default function SectionProcess() {
                     <h2 className='section-process__heading'>Move in three steps</h2>
                 </div>
                 <SectionProcessList />
-                <a href='#' className='section-process__cta-button'>
-                    Order now
-                </a>
+                <CTAButton className='section-process__cta-button' text='Order now' />
             </div>
         </section>
     );

@@ -63,6 +63,7 @@
         &.active {
             grid-template-rows: max-content 1fr;
             row-gap: 2rem;
+            will-change: grid-template-rows, grid-gap;
 
             & .section-faq__spoiler-wrapper {
                 transition: opacity 700ms ease-out;

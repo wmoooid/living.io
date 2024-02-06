@@ -18,6 +18,7 @@
 
         & .popup-form__wrapper {
             transform: scale(1);
+            will-change: transform;
         }
     }
 

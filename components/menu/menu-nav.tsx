@@ -32,7 +32,7 @@ export default function MenuNav() {
         <nav className='menu__nav'>
             <menu className='menu__nav-list'>
                 {ITEMS.map((el, i) => (
-                    <MenuNavItem index={i + 1} name={el.name} href={el.href} soon={el.soon} />
+                    <MenuNavItem key={el.name + i} index={i + 1} name={el.name} href={el.href} soon={el.soon} />
                 ))}
             </menu>
         </nav>

@@ -47,6 +47,7 @@
     &__grid-image {
         width: 100%;
         max-width: 18rem;
+        aspect-ratio: 1/1;
 
         & svg {
             width: 100%;

@@ -1,9 +1,9 @@
 'use client';
 
-import Lottie from 'lottie-react';
-import lottieImage from '@/public/lottie/section-ownership__lottie.json';
-import CTAButton from '@/components/cta-button/cta-button';
 import './section-ownership.scss';
+import CTAButton from '@/components/cta-button/cta-button';
+import LottieLoader from '@/components/lottie-loader/lottie-loader';
+import OwnershipLottieFallback from './lottie-fallback';
 
 export default function SectionOwnership() {
     return (
@@ -33,7 +33,9 @@ export default function SectionOwnership() {
                         <CTAButton className='section-ownership__cta-button' text='Join' />
                     </div>
                     <div className='section-ownership__image-wrapper'>
-                        <Lottie animationData={lottieImage} />
+                        <LottieLoader lottieSrc='./lottie/section-ownership__lottie.json'>
+                            <OwnershipLottieFallback />
+                        </LottieLoader>
                     </div>
                 </div>
             </div>

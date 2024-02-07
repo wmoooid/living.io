@@ -6,7 +6,7 @@ import CTAButton from '@/components/cta-button/cta-button';
 import OwnershipLottieFallback from './lottie-fallback';
 import { useInView } from 'react-intersection-observer';
 
-const LottieLoader = dynamic(() => import('@/components/lottie-loader/lottie-loader'));
+const LottieLoader = dynamic(() => import('@/components/lottie-loader/lottie-loader'), { loading: OwnershipLottieFallback });
 
 export default function SectionOwnership() {
     const { ref, inView } = useInView({

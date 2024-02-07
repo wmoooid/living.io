@@ -10,25 +10,23 @@ type LottieLoaderProps = {
 
 export default function LottieLoader({ lottieSrc, children }: LottieLoaderProps) {
     const [lottieData, setLottieData] = useState(null);
-    const { ref, inView } = useInView({
-        triggerOnce: true,
-        rootMargin: '1000px 0px',
-    });
+    // const { ref, inView } = useInView({
+    //     triggerOnce: true,
+    //     rootMargin: '1000px 0px',
+    // });
 
     useEffect(() => {
-        if (inView) {
-            import(`${lottieSrc}`).then((data) => {
-                // setLottieData(data);
-            });
-        }
-    }, [inView]);
+        import(`${lottieSrc}`).then((data) => {
+            setLottieData(data);
+        });
+    }, []);
 
-    if (!lottieData)
-        return (
-            <div className='lottie-loader' ref={ref}>
-                {children}
-            </div>
-        );
+    // if (!lottieData)
+    //     return (
+    //         <div className='lottie-loader' ref={ref}>
+    //             {children}
+    //         </div>
+    //     );
 
     return <Lottie animationData={lottieData} />;
 }

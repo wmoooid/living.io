@@ -1,3 +1,4 @@
+import './lottie-loader.scss';
 import Lottie from 'lottie-react';
 import { useState, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
@@ -17,12 +18,17 @@ export default function LottieLoader({ lottieSrc, children }: LottieLoaderProps)
     useEffect(() => {
         if (inView) {
             import(`${lottieSrc}`).then((data) => {
-                setLottieData(data);
+                // setLottieData(data);
             });
         }
     }, [inView]);
 
-    if (!lottieData) return <div ref={ref}>{children}</div>;
+    if (!lottieData)
+        return (
+            <div className='lottie-loader' ref={ref}>
+                {children}
+            </div>
+        );
 
     return <Lottie animationData={lottieData} />;
 }

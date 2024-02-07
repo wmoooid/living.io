@@ -16,7 +16,7 @@ function SectionProjectsItem({ data }: ItemProps) {
     return (
         <li className='section-projects__project'>
             <div className='section-projects__project-image'>
-                <Image src={data.imageSrc} alt='Project' fill={true} sizes='(max-width: 768px) 100vw, (min-width: 768px) 70vw' />
+                <Image src={data.imageSrc} alt='Project' fill={true} sizes='70vw' />
             </div>
             <div className='section-projects__description-wrapper'>
                 <div className='section-projects__description'>
@@ -32,7 +32,7 @@ function SectionProjectsItem({ data }: ItemProps) {
                             ))}
                         </ul>
                         <div className='section-projects__features-wrapper'>
-                            <h5 className='section-projects__features-heading'>Key features:</h5>
+                            <h4 className='section-projects__features-heading'>Key features:</h4>
                             <ol className='section-projects__features-list'>
                                 {data.features.map((el, i) => (
                                     <li key={i} className='section-projects__features-item'>

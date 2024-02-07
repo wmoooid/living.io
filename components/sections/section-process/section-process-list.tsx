@@ -1,10 +1,13 @@
 'use client';
 
+import dynamic from 'next/dynamic';
 import './section-process.scss';
-import LottieLoader from '@/components/lottie-loader/lottie-loader';
 import Step1Fallback from './step-1-fallback';
 import Step2Fallback from './step-2-fallback';
 import Step3Fallback from './step-3-fallback';
+import { useInView } from 'react-intersection-observer';
+
+const LottieLoader = dynamic(() => import('@/components/lottie-loader/lottie-loader'));
 
 type ItemProps = {
     lottieSrc: string;
@@ -35,13 +38,16 @@ const LIST: ItemProps[] = [
 ];
 
 function SectionProcessItem({ lottieSrc, LottieFallback, heading, text }: ItemProps) {
+    const { ref, inView } = useInView({
+        triggerOnce: true,
+        rootMargin: '1000px 0px',
+    });
+
     return (
-        <li className='section-process__grid-item'>
-            <div className='section-process__grid-image'>
-                <LottieLoader lottieSrc={lottieSrc}>{LottieFallback}</LottieLoader>
-            </div>
+        <li ref={ref} className='section-process__grid-item'>
+            <div className='section-process__grid-image'>{inView && <LottieLoader lottieSrc={lottieSrc}>{LottieFallback}</LottieLoader>}</div>
             <div className='section-process__description-wrapper'>
-                <h4 className='section-process__description-heading'>{heading}</h4>
+                <h3 className='section-process__description-heading'>{heading}</h3>
                 <p className='section-process__description-text'>{text}</p>
             </div>
         </li>

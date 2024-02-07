@@ -1,13 +1,21 @@
 'use client';
 
 import './section-ownership.scss';
+import dynamic from 'next/dynamic';
 import CTAButton from '@/components/cta-button/cta-button';
-import LottieLoader from '@/components/lottie-loader/lottie-loader';
 import OwnershipLottieFallback from './lottie-fallback';
+import { useInView } from 'react-intersection-observer';
+
+const LottieLoader = dynamic(() => import('@/components/lottie-loader/lottie-loader'));
 
 export default function SectionOwnership() {
+    const { ref, inView } = useInView({
+        triggerOnce: true,
+        rootMargin: '1000px 0px',
+    });
+
     return (
-        <section className='section-ownership'>
+        <section ref={ref} className='section-ownership'>
             <div className='container section-ownership__container'>
                 <div className='section-ownership__wrapper'>
                     <div className='section-ownership__content-wrapper'>
@@ -33,9 +41,11 @@ export default function SectionOwnership() {
                         <CTAButton className='section-ownership__cta-button' text='Join' />
                     </div>
                     <div className='section-ownership__image-wrapper'>
-                        <LottieLoader lottieSrc='./lottie/section-ownership__lottie.json'>
-                            <OwnershipLottieFallback />
-                        </LottieLoader>
+                        {inView && (
+                            <LottieLoader lottieSrc='./lottie/section-ownership__lottie.json'>
+                                <OwnershipLottieFallback />
+                            </LottieLoader>
+                        )}
                     </div>
                 </div>
             </div>

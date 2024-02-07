@@ -1,7 +1,7 @@
 'use client';
 
 import './popup-form.scss';
-import { useContext, useRef } from 'react';
+import { useContext, useEffect, useRef } from 'react';
 import { PopupContext } from './popup-context';
 
 export default function PopupForm() {
@@ -11,6 +11,15 @@ export default function PopupForm() {
     const handleClick = (event: React.MouseEvent<HTMLElement>) => {
         if (event.target === overlayRef.current) setIsPopupOpened(false);
     };
+
+    useEffect(() => {
+        const handleKeydown = (event: KeyboardEvent) => {
+            if (event.key === 'Escape') setIsPopupOpened(false);
+        };
+        window.addEventListener('keydown', handleKeydown);
+
+        return () => window.removeEventListener('keydown', handleKeydown);
+    }, []);
 
     return (
         <div onClick={handleClick} className={isPopupOpened ? 'popup-form active' : 'popup-form'} ref={overlayRef}>

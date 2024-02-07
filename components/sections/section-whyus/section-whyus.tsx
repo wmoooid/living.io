@@ -13,7 +13,7 @@ export default function SectionWhyus() {
             <div className='container section-whyus__container'>
                 <div className='section-whyus__banner'>
                     <div className='section-whyus__banner-image'>
-                        <Image src={'/img/whyus-image.jpg'} alt='background' fill={true} sizes='100vw' />
+                        <Image src={'/img/whyus-image.jpg'} alt='background' fill={true} sizes='75vw' priority />
                     </div>
                     <div className='section-whyus__banner-text'>
                         <small className='section-whyus__top-caption'>Why lvng?</small>

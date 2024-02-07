@@ -2,7 +2,6 @@ import './header.scss';
 import Icon_logo from '../icons/icon-logo';
 import Icon_menu from '../icons/icon-menu';
 import Icon_lights from '../icons/icon-lights';
-import Divider from '../divider/divider';
 import { useContext } from 'react';
 import { NavigationContext } from '../navigation/navigation';
 import { useLenis } from '@studio-freight/react-lenis';
@@ -40,18 +39,22 @@ export default function Header() {
                     <Icon_logo />
                 </span>
                 <ul className='header__nav-list'>
-                    <li className='header__nav-item' onClick={handleClickMenu}>
-                        <span className='header__nav-text'>Menu</span>
-                        <span className='header__nav-icon'>
-                            <Icon_menu />
-                        </span>
+                    <li className='header__nav-item'>
+                        <button onClick={handleClickMenu} className='header__nav-button'>
+                            <span className='header__nav-text'>Menu</span>
+                            <span className='header__nav-icon'>
+                                <Icon_menu />
+                            </span>
+                        </button>
                     </li>
-                    <Divider />
-                    <li className='header__nav-item' onClick={handleClickLight}>
-                        <span className='header__nav-text'>Lights off</span>
-                        <span className='header__nav-icon'>
-                            <Icon_lights theme='light' />
-                        </span>
+                    <li className='divider'></li>
+                    <li className='header__nav-item'>
+                        <button onClick={handleClickLight} className='header__nav-button'>
+                            <span className='header__nav-text'>Lights off</span>
+                            <span className='header__nav-icon'>
+                                <Icon_lights theme='light' />
+                            </span>
+                        </button>
                     </li>
                 </ul>
             </nav>

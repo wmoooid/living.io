@@ -41,11 +41,7 @@ export default function SectionOwnership() {
                         <CTAButton className='section-ownership__cta-button' text='Join' />
                     </div>
                     <div className='section-ownership__image-wrapper'>
-                        {inView && (
-                            <LottieLoader lottieSrc='./lottie/section-ownership__lottie.json'>
-                                <OwnershipLottieFallback />
-                            </LottieLoader>
-                        )}
+                        {inView && <LottieLoader lottieSrc='./lottie/section-ownership__lottie.json' />}
                     </div>
                 </div>
             </div>

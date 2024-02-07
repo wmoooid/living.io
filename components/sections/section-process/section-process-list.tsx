@@ -45,7 +45,7 @@ function SectionProcessItem({ lottieSrc, LottieFallback, heading, text }: ItemPr
 
     return (
         <li ref={ref} className='section-process__grid-item'>
-            <div className='section-process__grid-image'>{inView && <LottieLoader lottieSrc={lottieSrc}>{LottieFallback}</LottieLoader>}</div>
+            <div className='section-process__grid-image'>{inView && <LottieLoader lottieSrc={lottieSrc} />}</div>
             <div className='section-process__description-wrapper'>
                 <h3 className='section-process__description-heading'>{heading}</h3>
                 <p className='section-process__description-text'>{text}</p>

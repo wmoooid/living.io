@@ -2,7 +2,7 @@ import './lottie-loader.scss';
 import Lottie from 'lottie-react';
 import { useState, useEffect } from 'react';
 
-type LottieLoaderProps = {
+export type LottieLoaderProps = {
     lottieSrc: string;
 };
 

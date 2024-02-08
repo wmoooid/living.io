@@ -20,7 +20,7 @@ function MenuNavItem({ index, name, href, soon }: NavItemProps) {
     return (
         <li className='menu__nav-item'>
             <small className='menu__nav-item-num'>{'0' + index}</small>
-            <a href={href} className={soon ? 'menu__nav-item-text soon' : 'menu__nav-item-text'}>
+            <a href={href} tabIndex={soon ? -1 : 0} className={soon ? 'menu__nav-item-text soon' : 'menu__nav-item-text'}>
                 {name}
             </a>
         </li>

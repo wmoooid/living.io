@@ -137,5 +137,21 @@
 
         cursor: pointer;
         user-select: none;
+
+        transition: 300ms opacity ease-out;
+
+        &[disabled],
+        &:disabled {
+            opacity: 0.3;
+            pointer-events: none;
+        }
+    }
+}
+
+@media screen and (width < 768px) {
+    .popup-form {
+        &__wrapper {
+            padding: 2rem;
+        }
     }
 }

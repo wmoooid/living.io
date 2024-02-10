@@ -1,10 +1,10 @@
+import '@/node_modules/normalize.css';
+import '@/styles/globals.scss';
 import Footer from '@/components/footer/footer';
 import Stripes from '@/components/stripes/stripes';
 import localFont from 'next/font/local';
 import SmoothScrolling from '@/components/smooth-scrolling/smooth-scrolling';
 import Navigation from '@/components/navigation/navigation';
-import '@/node_modules/normalize.css';
-import '@/styles/globals.scss';
 import PopupContextProvider from '@/components/popup-form/popup-context';
 import PopupForm from '@/components/popup-form/popup-form';
 import ThemeContextProvider from '@/components/theme-context/theme-context';

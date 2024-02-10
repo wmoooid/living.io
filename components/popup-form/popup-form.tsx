@@ -1,10 +1,10 @@
 'use client';
 
 import './popup-form.scss';
-import { useContext, useEffect, useRef } from 'react';
+import { FormEvent, useContext, useEffect, useRef, useState } from 'react';
 import { PopupContext } from './popup-context';
 
-export default function PopupForm() {
+export default function PopupWrapper() {
     const { isPopupOpened, setIsPopupOpened } = useContext(PopupContext);
     const overlayRef = useRef(null);
 
@@ -31,31 +31,78 @@ export default function PopupForm() {
                         necessary conditions for its construction are met. Please answer the following questions for verification.
                     </p>
                 </div>
-                <form className='popup-form__form'>
-                    <label htmlFor='name' className='popup-form__label-top'>
-                        Name and surname
-                        <input className='popup-form__input' type='text' name='name' id='name' placeholder='John Doe' />
-                    </label>
-                    <label htmlFor='email' className='popup-form__label-top'>
-                        Email* (THIS FIELD IS REQUIRED)
-                        <input className='popup-form__input' type='email' name='email' id='email' placeholder='John@example.com' />
-                    </label>
-                    <label htmlFor='agree' className='popup-form__label-checkbox'>
-                        <input className='popup-form__checkbox' type='checkbox' name='agree' id='agree' />
-                        <div className='popup-form__checkbox-pseudo'>
-                            <svg xmlns='http://www.w3.org/2000/svg' width='1rem' height='0.75rem' viewBox='0 0 16 12' fill='none'>
-                                <path d='M1 7L5 11L15 1' stroke='white' strokeLinecap='round' strokeLinejoin='round' />
-                            </svg>
-                        </div>
-                        <span className='popup-form__checkbox-text'>
-                            *I consent to the processing of my personal data contained in this form and agree to the Privacy Policy in order to
-                            receive an answer to my question.
-                        </span>
-                    </label>
-
-                    <button className='popup-form__button'>Submit</button>
-                </form>
+                <PopupForm />
             </div>
         </div>
+    );
+}
+
+function PopupForm() {
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [consent, setConsent] = useState(false);
+    const { setIsPopupOpened } = useContext(PopupContext);
+
+    function handleSubmit(event: FormEvent<HTMLFormElement>) {
+        event.preventDefault();
+        event.stopPropagation();
+
+        setName('');
+        setEmail('');
+        setConsent(false);
+
+        setIsPopupOpened(false);
+    }
+
+    return (
+        <form onSubmit={handleSubmit} className='popup-form__form'>
+            <label htmlFor='name' className='popup-form__label-top'>
+                Name
+                <input
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    className='popup-form__input'
+                    type='text'
+                    name='name'
+                    id='name'
+                    placeholder='John Doe'
+                />
+            </label>
+            <label htmlFor='email' className='popup-form__label-top'>
+                Email* (REQUIRED)
+                <input
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className='popup-form__input'
+                    type='email'
+                    name='email'
+                    id='email'
+                    placeholder='John@example.com'
+                />
+            </label>
+            <label htmlFor='agree' className='popup-form__label-checkbox'>
+                <input
+                    checked={consent}
+                    onChange={(e) => setConsent(e.target.checked)}
+                    className='popup-form__checkbox'
+                    type='checkbox'
+                    name='agree'
+                    id='agree'
+                />
+                <div className='popup-form__checkbox-pseudo'>
+                    <svg xmlns='http://www.w3.org/2000/svg' width='1rem' height='0.75rem' viewBox='0 0 16 12' fill='none'>
+                        <path d='M1 7L5 11L15 1' stroke='white' strokeLinecap='round' strokeLinejoin='round' />
+                    </svg>
+                </div>
+                <span className='popup-form__checkbox-text'>
+                    *I consent to the processing of my personal data contained in this form and agree to the Privacy Policy in order to receive an
+                    answer to my question.
+                </span>
+            </label>
+
+            <button disabled={!consent} className='popup-form__button'>
+                Submit
+            </button>
+        </form>
     );
 }

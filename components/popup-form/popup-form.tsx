@@ -3,10 +3,12 @@
 import './popup-form.scss';
 import { FormEvent, useContext, useEffect, useRef, useState } from 'react';
 import { PopupContext } from './popup-context';
+import { useLenis } from '@studio-freight/react-lenis';
 
 export default function PopupWrapper() {
     const { isPopupOpened, setIsPopupOpened } = useContext(PopupContext);
     const overlayRef = useRef(null);
+    const lenis = useLenis();
 
     const handleClick = (event: React.MouseEvent<HTMLElement>) => {
         if (event.target === overlayRef.current) setIsPopupOpened(false);
@@ -20,6 +22,10 @@ export default function PopupWrapper() {
 
         return () => window.removeEventListener('keydown', handleKeydown);
     }, []);
+
+    useEffect(() => {
+        lenis && (lenis.isStopped = isPopupOpened);
+    }, [isPopupOpened]);
 
     return (
         <div onClick={handleClick} className={isPopupOpened ? 'popup-form active' : 'popup-form'} ref={overlayRef}>

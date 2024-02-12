@@ -9,7 +9,6 @@ import { useLenis } from '@studio-freight/react-lenis';
 export default function Header() {
     const { isMenuOpened, setIsMenuOpened } = useContext(NavigationContext);
     const lenis = useLenis();
-    const documentClass = document.documentElement.classList;
 
     const handleClickMenu = () => {
         if (isMenuOpened) {
@@ -24,11 +23,12 @@ export default function Header() {
     useEffect(() => {
         console.log(window.matchMedia('(prefers-color-scheme: dark)'));
         if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            documentClass.add('dark');
+            document.documentElement.classList.add('dark');
         }
     }, []);
 
     const handleClickLight = () => {
+        const documentClass = document.documentElement.classList;
         if (documentClass.contains('dark')) {
             documentClass.remove('dark');
             documentClass.add('light');

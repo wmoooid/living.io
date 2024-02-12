@@ -7,12 +7,7 @@ import { useLenis } from '@studio-freight/react-lenis';
 
 export default function PopupWrapper() {
     const { isPopupOpened, setIsPopupOpened } = useContext(PopupContext);
-    const overlayRef = useRef(null);
     const lenis = useLenis();
-
-    const handleClick = (event: React.MouseEvent<HTMLElement>) => {
-        if (event.target === overlayRef.current) setIsPopupOpened(false);
-    };
 
     useEffect(() => {
         const handleKeydown = (event: KeyboardEvent) => {
@@ -28,8 +23,12 @@ export default function PopupWrapper() {
     }, [isPopupOpened]);
 
     return (
-        <div onClick={handleClick} className={isPopupOpened ? 'popup-form active' : 'popup-form'} ref={overlayRef}>
+        <div className={isPopupOpened ? 'popup-form active' : 'popup-form'}>
+            <div onClick={() => setIsPopupOpened(false)} className='popup-form__overlay'></div>
             <div className='popup-form__wrapper'>
+                <button onClick={() => setIsPopupOpened(false)} className='popup-form__close-button'>
+                    ×
+                </button>
                 <div className='popup-form__heading-wrapper'>
                     <h3 className='popup-form__heading'>Order now!</h3>
                     <p className='popup-form__text'>
@@ -84,6 +83,7 @@ function PopupForm() {
                     name='email'
                     id='email'
                     placeholder='John@example.com'
+                    required
                 />
             </label>
             <label htmlFor='agree' className='popup-form__label-checkbox'>
@@ -94,6 +94,7 @@ function PopupForm() {
                     type='checkbox'
                     name='agree'
                     id='agree'
+                    required
                 />
                 <div className='popup-form__checkbox-pseudo'>
                     <svg xmlns='http://www.w3.org/2000/svg' width='1rem' height='0.75rem' viewBox='0 0 16 12' fill='none'>

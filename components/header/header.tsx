@@ -2,13 +2,14 @@ import './header.scss';
 import Icon_logo from '../icons/icon-logo';
 import Icon_menu from '../icons/icon-menu';
 import Icon_lights from '../icons/icon-lights';
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import { NavigationContext } from '../navigation/navigation';
 import { useLenis } from '@studio-freight/react-lenis';
 
 export default function Header() {
     const { isMenuOpened, setIsMenuOpened } = useContext(NavigationContext);
     const lenis = useLenis();
+    const documentClass = document.documentElement.classList;
 
     const handleClickMenu = () => {
         if (isMenuOpened) {
@@ -20,9 +21,14 @@ export default function Header() {
         }
     };
 
-    const handleClickLight = () => {
-        const documentClass = document.documentElement.classList;
+    useEffect(() => {
+        console.log(window.matchMedia('(prefers-color-scheme: dark)'));
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            documentClass.add('dark');
+        }
+    }, []);
 
+    const handleClickLight = () => {
         if (documentClass.contains('dark')) {
             documentClass.remove('dark');
             documentClass.add('light');

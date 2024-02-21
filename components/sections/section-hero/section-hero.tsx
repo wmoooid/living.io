@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Icon_arrow from '../../icons/icon-arrow';
 import SectionHeroHeading from './section-hero-heading';
 import { useLenis } from '@studio-freight/react-lenis';
-import CTAButton from '@/components/cta-button/cta-button';
+import CTAButton from '@/components/layout/cta-button/cta-button';
 
 export default function SectionHero() {
     const lenis = useLenis();

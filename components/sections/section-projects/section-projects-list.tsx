@@ -1,7 +1,7 @@
 import './section-projects.scss';
 import Image from 'next/image';
 import { objectData } from './section-projects';
-import CTAButton from '@/components/cta-button/cta-button';
+import CTAButton from '@/components/layout/cta-button/cta-button';
 
 type ItemProps = {
     data: objectData;

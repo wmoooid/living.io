@@ -1,4 +1,4 @@
-import CTAButton from '@/components/cta-button/cta-button';
+import CTAButton from '@/components/layout/cta-button/cta-button';
 import './section-join.scss';
 import Image from 'next/image';
 

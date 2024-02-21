@@ -1,13 +1,13 @@
 import '@/node_modules/normalize.css';
 import '@/styles/globals.scss';
-import Footer from '@/components/footer/footer';
-import Stripes from '@/components/stripes/stripes';
+import Footer from '@/components/layout/footer/footer';
+import Stripes from '@/components/layout/stripes/stripes';
 import localFont from 'next/font/local';
-import SmoothScrolling from '@/components/smooth-scrolling/smooth-scrolling';
-import Navigation from '@/components/navigation/navigation';
-import PopupContextProvider from '@/components/popup-form/popup-context';
-import PopupForm from '@/components/popup-form/popup-form';
-import ThemeContextProvider from '@/components/theme-context/theme-context';
+import SmoothScrolling from '@/components/utils/smooth-scrolling/smooth-scrolling';
+import Navigation from '@/components/layout/navigation/navigation';
+import PopupContextProvider from '@/components/layout/popup-form/popup-context';
+import PopupForm from '@/components/layout/popup-form/popup-form';
+import ThemeContextProvider from '@/components/utils/theme-context/theme-context';
 
 const Muller = localFont({
     src: [

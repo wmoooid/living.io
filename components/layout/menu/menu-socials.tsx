@@ -1,4 +1,4 @@
-import Icon_arrow from '../icons/icon-arrow';
+import Icon_arrow from '../../icons/icon-arrow';
 import './menu.scss';
 
 type SocialItemProps = {

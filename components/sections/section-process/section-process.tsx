@@ -1,4 +1,4 @@
-import CTAButton from '@/components/cta-button/cta-button';
+import CTAButton from '@/components/layout/cta-button/cta-button';
 import SectionProcessList from './section-process-list';
 import './section-process.scss';
 

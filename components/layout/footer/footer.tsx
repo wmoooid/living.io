@@ -1,6 +1,6 @@
-import '@/components/footer/footer.scss';
-import Icon_logo from '../icons/icon-logo';
-import Icon_socials from '../icons/Icon-socials';
+import './footer.scss';
+import Icon_logo from '@/components/icons/icon-logo';
+import Icon_socials from '@/components/icons/Icon-socials';
 
 export default function Footer() {
     return (

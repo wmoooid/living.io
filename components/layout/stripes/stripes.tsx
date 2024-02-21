@@ -1,4 +1,4 @@
-import '@/components/stripes/stripes.scss';
+import './stripes.scss';
 
 export default function Stripes() {
     return (

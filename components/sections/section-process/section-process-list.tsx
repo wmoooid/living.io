@@ -7,11 +7,11 @@ import Step2Fallback from './step-2-fallback';
 import Step3Fallback from './step-3-fallback';
 import { useInView } from 'react-intersection-observer';
 import { ComponentType } from 'react';
-import { LottieLoaderProps } from '@/components/lottie-loader/lottie-loader';
+import { LottieLoaderProps } from '@/components/utils/lottie-loader/lottie-loader';
 
-const LottieLoader1 = dynamic(() => import('@/components/lottie-loader/lottie-loader'), { loading: Step1Fallback });
-const LottieLoader2 = dynamic(() => import('@/components/lottie-loader/lottie-loader'), { loading: Step2Fallback });
-const LottieLoader3 = dynamic(() => import('@/components/lottie-loader/lottie-loader'), { loading: Step3Fallback });
+const LottieLoader1 = dynamic(() => import('@/components/utils/lottie-loader/lottie-loader'), { loading: Step1Fallback });
+const LottieLoader2 = dynamic(() => import('@/components/utils/lottie-loader/lottie-loader'), { loading: Step2Fallback });
+const LottieLoader3 = dynamic(() => import('@/components/utils/lottie-loader/lottie-loader'), { loading: Step3Fallback });
 
 type ItemProps = {
     lottieSrc: string;

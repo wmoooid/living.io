@@ -1,7 +1,7 @@
 import './header.scss';
-import Icon_logo from '../icons/icon-logo';
-import Icon_menu from '../icons/icon-menu';
-import Icon_lights from '../icons/icon-lights';
+import Icon_logo from '../../icons/icon-logo';
+import Icon_menu from '../../icons/icon-menu';
+import Icon_lights from '../../icons/icon-lights';
 import { useContext, useEffect } from 'react';
 import { NavigationContext } from '../navigation/navigation';
 import { useLenis } from '@studio-freight/react-lenis';
@@ -21,7 +21,6 @@ export default function Header() {
     };
 
     useEffect(() => {
-        console.log(window.matchMedia('(prefers-color-scheme: dark)'));
         if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
             document.documentElement.classList.add('dark');
         }

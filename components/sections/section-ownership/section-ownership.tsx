@@ -2,11 +2,11 @@
 
 import './section-ownership.scss';
 import dynamic from 'next/dynamic';
-import CTAButton from '@/components/cta-button/cta-button';
+import CTAButton from '@/components/layout/cta-button/cta-button';
 import OwnershipLottieFallback from './lottie-fallback';
 import { useInView } from 'react-intersection-observer';
 
-const LottieLoader = dynamic(() => import('@/components/lottie-loader/lottie-loader'), { loading: OwnershipLottieFallback });
+const LottieLoader = dynamic(() => import('@/components/utils/lottie-loader/lottie-loader'), { loading: OwnershipLottieFallback });
 
 export default function SectionOwnership() {
     const { ref, inView } = useInView({

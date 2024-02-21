@@ -13,7 +13,7 @@ export default function LottieLoader({ lottieSrc }: LottieLoaderProps) {
         import(`${lottieSrc}`).then((data) => {
             setLottieData(data);
         });
-    }, []);
+    }, [lottieSrc]);
 
     return <Lottie animationData={lottieData} />;
 }

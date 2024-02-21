@@ -16,7 +16,7 @@ function SectionFaqItem({ heading, text }: ItemProps) {
         <li onClick={() => setIsOpened((curr) => !curr)} className={isOpened ? 'section-faq__item active' : 'section-faq__item'}>
             <h3 className='section-faq__item-heading'>{heading}</h3>
             <span className='section-faq__item-button'>
-                <Icon_accordion />
+                <Icon_accordion type={isOpened ? 'close' : 'open'} />
             </span>
             <div className='section-faq__spoiler-wrapper'>
                 <p className='section-faq__item-text'>{text}</p>

@@ -42,7 +42,7 @@ function SectionSolutionsItem({ caption, heading, text }: ItemProps) {
             <small className='section-solutions__item-caption'>{caption}</small>
             <h3 className='section-solutions__item-heading'>{heading}</h3>
             <span className='section-solutions__item-button'>
-                <Icon_accordion />
+                <Icon_accordion type={isOpened ? 'close' : 'open'} />
             </span>
             <div className='section-solutions__item-spoiler'>
                 <p className='section-solutions__item-text'>{text}</p>

@@ -2,11 +2,12 @@ import './header.scss';
 import Icon_logo from '../../icons/icon-logo';
 import Icon_menu from '../../icons/icon-menu';
 import Icon_lights from '../../icons/icon-lights';
-import { useContext, useEffect } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { NavigationContext } from '../navigation/navigation';
 
 export default function Header() {
-    const { setIsMenuOpened } = useContext(NavigationContext);
+    const { isMenuOpened, setIsMenuOpened } = useContext(NavigationContext);
+    const [islightsOn, setIslightsOn] = useState(true);
 
     const handleClickMenu = () => setIsMenuOpened((prev) => !prev);
 
@@ -21,9 +22,11 @@ export default function Header() {
         if (documentClass.contains('dark')) {
             documentClass.remove('dark');
             documentClass.add('light');
+            setIslightsOn(true);
         } else {
             documentClass.remove('light');
             documentClass.add('dark');
+            setIslightsOn(false);
         }
     };
 
@@ -38,16 +41,16 @@ export default function Header() {
                         <button onClick={handleClickMenu} className='header__nav-button'>
                             <span className='header__nav-text'>Menu</span>
                             <span className='header__nav-icon'>
-                                <Icon_menu />
+                                <Icon_menu type={isMenuOpened ? 'close' : 'open'} />
                             </span>
                         </button>
                     </li>
                     <li className='divider'></li>
                     <li className='header__nav-item'>
                         <button onClick={handleClickLight} className='header__nav-button'>
-                            <span className='header__nav-text'>Lights off</span>
+                            <span className='header__nav-text'>{islightsOn ? 'Lights off' : 'Lights on'}</span>
                             <span className='header__nav-icon'>
-                                <Icon_lights theme='light' />
+                                <Icon_lights type={islightsOn ? 'light' : 'dark'} />
                             </span>
                         </button>
                     </li>

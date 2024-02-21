@@ -1,8 +1,22 @@
-export default function Icon_accordion() {
+type IconProps = {
+    type: 'open' | 'close';
+};
+
+export default function Icon_accordion({ type }: IconProps) {
     return (
-        <svg width='1.5rem' height='1.5rem' viewBox='0 0 25 25' fill='none' xmlns='http://www.w3.org/2000/svg'>
-            <rect x='12.33' y='0.169922' width='1' height='24' fill='#1E1E1C' />
-            <rect x='0.829956' y='11.6699' width='24' height='1' fill='#1E1E1C' />
-        </svg>
+        <div style={{ width: '1.5rem', height: '1.5rem', overflow: 'hidden' }}>
+            <div
+                style={{
+                    transform: type === 'close' ? 'rotate(45deg)' : 'none',
+                    transition: 'transform 500ms var(--ease-back)',
+                    display: 'flex',
+                    flexDirection: 'column',
+                }}>
+                <svg width='1.5rem' height='1.5rem' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                    <rect x='9' width='1' height='19' fill='#1E1E1C' />
+                    <rect y='9' width='19' height='1' fill='#1E1E1C' />
+                </svg>
+            </div>
+        </div>
     );
 }

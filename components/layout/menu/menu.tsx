@@ -15,7 +15,7 @@ export default function Menu() {
         } else {
             lenis && (lenis.isStopped = false);
         }
-    }, [isMenuOpened]);
+    }, [isMenuOpened, lenis]);
 
     return (
         <div className={isMenuOpened ? 'menu visible' : 'menu'}>

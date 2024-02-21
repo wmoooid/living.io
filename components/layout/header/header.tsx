@@ -4,21 +4,11 @@ import Icon_menu from '../../icons/icon-menu';
 import Icon_lights from '../../icons/icon-lights';
 import { useContext, useEffect } from 'react';
 import { NavigationContext } from '../navigation/navigation';
-import { useLenis } from '@studio-freight/react-lenis';
 
 export default function Header() {
-    const { isMenuOpened, setIsMenuOpened } = useContext(NavigationContext);
-    const lenis = useLenis();
+    const { setIsMenuOpened } = useContext(NavigationContext);
 
-    const handleClickMenu = () => {
-        if (isMenuOpened) {
-            setIsMenuOpened(false);
-            lenis && (lenis.isStopped = false);
-        } else {
-            setIsMenuOpened(true);
-            lenis && (lenis.isStopped = true);
-        }
-    };
+    const handleClickMenu = () => setIsMenuOpened((prev) => !prev);
 
     useEffect(() => {
         if (window.matchMedia('(prefers-color-scheme: dark)').matches) {

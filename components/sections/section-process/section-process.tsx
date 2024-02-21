@@ -4,7 +4,7 @@ import './section-process.scss';
 
 export default function SectionProcess() {
     return (
-        <section className='section-process'>
+        <section id='process' className='section-process'>
             <div className='container section-process__container'>
                 <div className='section-process__heading-wrapper'>
                     <small className='section-process__top-caption'>Process</small>

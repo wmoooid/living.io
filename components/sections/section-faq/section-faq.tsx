@@ -1,11 +1,10 @@
 import './section-faq.scss';
-import Icon_accordion from '../../icons/icon-accordion';
 import Image from 'next/image';
 import SectionFaqList from './section-faq-list';
 
 export default function SectionFaq() {
     return (
-        <section className='section-faq'>
+        <section id='faq' className='section-faq'>
             <div className='container section-faq__container'>
                 <div className='section-faq__heading-wrapper'>
                     <small className='section-faq__top-caption'>Faq</small>

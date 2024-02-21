@@ -8,7 +8,7 @@ import Icon_price from '../../icons/icon-price';
 
 export default function SectionInnovation() {
     return (
-        <section className='section-innovation'>
+        <section id='innovations' className='section-innovation'>
             <div className='container section-innovation__container'>
                 <div className='section-innovation__header'>
                     <div className='section-innovation__heading-wrapper'>

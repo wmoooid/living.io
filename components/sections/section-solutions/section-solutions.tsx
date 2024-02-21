@@ -3,7 +3,7 @@ import SectionSolutionsList from './section-solutions-list';
 
 export default function SectionSolutions() {
     return (
-        <section className='section-solutions'>
+        <section id='solutions' className='section-solutions'>
             <div className='container section-solutions__container'>
                 <div className='section-solutions__heading-wrapper'>
                     <small className='section-solutions__top-caption'>Technology & Partners</small>

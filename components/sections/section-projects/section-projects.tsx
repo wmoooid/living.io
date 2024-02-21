@@ -87,7 +87,7 @@ export default function SectionProjects() {
     };
 
     return (
-        <section className='section-projects'>
+        <section id='projects' className='section-projects'>
             <div className='container section-projects__container'>
                 <h2 className='section-projects__heading'>Our projects</h2>
                 <SectionProjectsList objectList={OBJECTS} currentObject={currentObject} />

@@ -9,7 +9,7 @@ export default function SectionWhyus() {
     const [currentBullet, setCurrentBullet] = useState(1);
 
     return (
-        <section className='section-whyus'>
+        <section id='whyus' className='section-whyus'>
             <div className='container section-whyus__container'>
                 <div className='section-whyus__banner'>
                     <div className='section-whyus__banner-image'>

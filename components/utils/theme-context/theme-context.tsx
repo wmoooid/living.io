@@ -2,7 +2,7 @@
 
 import { createContext, useEffect, useState } from 'react';
 
-type Theme = 'light' | 'dark';
+type Theme = 'light' | 'dark' | null;
 
 type ThemeContextProviderProps = {
     children: React.ReactNode;
@@ -16,17 +16,20 @@ type ThemeContext = {
 export const ThemeContext = createContext({} as ThemeContext);
 
 export default function ThemeContextProvider({ children }: ThemeContextProviderProps) {
-    const [currentTheme, setCurrentTheme] = useState<Theme>('light');
+    const [currentTheme, setCurrentTheme] = useState<Theme>(null);
 
     useEffect(() => {
-        if (window.matchMedia('(prefers-color-scheme: dark)')) setCurrentTheme('dark');
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            setCurrentTheme('dark');
+        } else {
+            setCurrentTheme('light');
+        }
     }, []);
 
     useEffect(() => {
         const docClassList = document.documentElement.classList;
 
         docClassList.remove('light', 'dark');
-
         if (currentTheme === 'light') docClassList.add('light');
         if (currentTheme === 'dark') docClassList.add('dark');
     }, [currentTheme]);

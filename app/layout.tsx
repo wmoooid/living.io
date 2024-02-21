@@ -43,17 +43,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     return (
         <html lang='ru' className={Muller.className}>
             <body>
-                {/* <ThemeContextProvider> */}
-                <PopupContextProvider>
-                    <SmoothScrolling>
-                        <Navigation />
-                        <main>{children}</main>
-                        <Footer />
-                        <Stripes />
-                        <PopupForm />
-                    </SmoothScrolling>
-                </PopupContextProvider>
-                {/* </ThemeContextProvider> */}
+                <ThemeContextProvider>
+                    <PopupContextProvider>
+                        <SmoothScrolling>
+                            <Navigation />
+                            <main>{children}</main>
+                            <Footer />
+                            <Stripes />
+                            <PopupForm />
+                        </SmoothScrolling>
+                    </PopupContextProvider>
+                </ThemeContextProvider>
             </body>
         </html>
     );

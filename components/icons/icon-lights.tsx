@@ -1,5 +1,5 @@
 type IconProps = {
-    type: 'light' | 'dark';
+    type: 'light' | 'dark' | null;
 };
 
 export default function Icon_lights({ type }: IconProps) {
@@ -7,7 +7,7 @@ export default function Icon_lights({ type }: IconProps) {
         <div style={{ width: '1rem', height: '1rem', overflow: 'hidden' }}>
             <div
                 style={{
-                    transform: type === 'light' ? 'none' : 'translateY(-1rem)',
+                    transform: type === 'dark' ? 'translateY(-1rem)' : 'none',
                     transition: 'transform 500ms var(--ease-back)',
                     display: 'flex',
                     flexDirection: 'column',

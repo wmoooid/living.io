@@ -4,30 +4,16 @@ import Icon_menu from '../../icons/icon-menu';
 import Icon_lights from '../../icons/icon-lights';
 import { useContext, useEffect, useState } from 'react';
 import { NavigationContext } from '../navigation/navigation';
+import { ThemeContext } from '@/components/utils/theme-context/theme-context';
 
 export default function Header() {
     const { isMenuOpened, setIsMenuOpened } = useContext(NavigationContext);
-    const [islightsOn, setIslightsOn] = useState(true);
+    const { currentTheme, setCurrentTheme } = useContext(ThemeContext);
 
     const handleClickMenu = () => setIsMenuOpened((prev) => !prev);
 
-    useEffect(() => {
-        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            document.documentElement.classList.add('dark');
-        }
-    }, []);
-
     const handleClickLight = () => {
-        const documentClass = document.documentElement.classList;
-        if (documentClass.contains('dark')) {
-            documentClass.remove('dark');
-            documentClass.add('light');
-            setIslightsOn(true);
-        } else {
-            documentClass.remove('light');
-            documentClass.add('dark');
-            setIslightsOn(false);
-        }
+        currentTheme === 'light' ? setCurrentTheme('dark') : setCurrentTheme('light');
     };
 
     return (
@@ -48,9 +34,9 @@ export default function Header() {
                     <li className='divider'></li>
                     <li className='header__nav-item'>
                         <button onClick={handleClickLight} className='header__nav-button'>
-                            <span className='header__nav-text'>{islightsOn ? 'Lights off' : 'Lights on'}</span>
+                            <span className='header__nav-text'>{currentTheme === 'dark' ? 'Lights on' : 'Lights off'}</span>
                             <span className='header__nav-icon'>
-                                <Icon_lights type={islightsOn ? 'light' : 'dark'} />
+                                <Icon_lights type={currentTheme && currentTheme} />
                             </span>
                         </button>
                     </li>

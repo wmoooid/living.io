@@ -1,5 +1,5 @@
 type IconProps = {
-    type: 'light' | 'dark' | null;
+    type: 'light' | 'dark';
 };
 
 export default function Icon_lights({ type }: IconProps) {

@@ -8,6 +8,7 @@ import Navigation from '@/components/layout/navigation/navigation';
 import PopupContextProvider from '@/components/layout/popup-form/popup-context';
 import PopupForm from '@/components/layout/popup-form/popup-form';
 import ThemeContextProvider from '@/components/utils/theme-context/theme-context';
+import { Analytics } from '@vercel/analytics/react';
 
 const Muller = localFont({
     src: [
@@ -54,6 +55,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                         </SmoothScrolling>
                     </PopupContextProvider>
                 </ThemeContextProvider>
+                <Analytics />
             </body>
         </html>
     );

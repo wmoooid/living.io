@@ -1,6 +1,6 @@
 'use client';
 
-import { createContext, useEffect, useState } from 'react';
+import { createContext, useLayoutEffect, useEffect, useState } from 'react';
 
 type Theme = 'light' | 'dark' | null;
 
@@ -18,7 +18,7 @@ export const ThemeContext = createContext({} as ThemeContext);
 export default function ThemeContextProvider({ children }: ThemeContextProviderProps) {
     const [currentTheme, setCurrentTheme] = useState<Theme>(null);
 
-    useEffect(() => {
+    useLayoutEffect(() => {
         if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
             setCurrentTheme('dark');
         } else {
@@ -26,7 +26,7 @@ export default function ThemeContextProvider({ children }: ThemeContextProviderP
         }
     }, []);
 
-    useEffect(() => {
+    useLayoutEffect(() => {
         const docClassList = document.documentElement.classList;
 
         docClassList.remove('light', 'dark');

@@ -16,11 +16,11 @@ export default function PopupWrapper() {
         window.addEventListener('keydown', handleKeydown);
 
         return () => window.removeEventListener('keydown', handleKeydown);
-    }, []);
+    }, [setIsPopupOpened]);
 
     useEffect(() => {
         lenis && (lenis.isStopped = isPopupOpened);
-    }, [isPopupOpened]);
+    }, [isPopupOpened, lenis]);
 
     return (
         <div className={isPopupOpened ? 'popup-form active' : 'popup-form'}>

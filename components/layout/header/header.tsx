@@ -2,7 +2,7 @@ import './header.scss';
 import Icon_logo from '../../icons/icon-logo';
 import Icon_menu from '../../icons/icon-menu';
 import Icon_lights from '../../icons/icon-lights';
-import { useContext, useEffect, useState } from 'react';
+import { useContext } from 'react';
 import { NavigationContext } from '../navigation/navigation';
 import { ThemeContext } from '@/components/utils/theme-context/theme-context';
 

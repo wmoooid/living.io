@@ -55,10 +55,11 @@ export default function Footer() {
                     </ul>
                 </div>
                 <div className='footer__copyright-wrapper'>
-                    <small className='footer__copyright'>© 2023 LVNG S.A. / Sensonar sp. z o.o.</small>
-                    <a href='#' className='footer__policy'>
+                    <small className='footer__copyright'>© 2024</small>
+                    {/* <a href='#' className='footer__policy'>
                         Legal regulations
-                    </a>
+                    </a> */}
+                    <small className='footer__copyright'>LVNG S.A. / Sensonar sp. z o.o.</small>
                 </div>
             </div>
         </footer>

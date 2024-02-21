@@ -46,17 +46,22 @@ function PopupForm() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [consent, setConsent] = useState(false);
+    const [isSending, setIsSending] = useState(false);
     const { setIsPopupOpened } = useContext(PopupContext);
 
     function handleSubmit(event: FormEvent<HTMLFormElement>) {
         event.preventDefault();
         event.stopPropagation();
+        setIsSending(true);
 
-        setName('');
-        setEmail('');
-        setConsent(false);
+        setTimeout(() => {
+            setName('');
+            setEmail('');
+            setConsent(false);
+            setIsSending(false);
 
-        setIsPopupOpened(false);
+            setIsPopupOpened(false);
+        }, 1000);
     }
 
     return (
@@ -107,7 +112,7 @@ function PopupForm() {
                 </span>
             </label>
 
-            <button disabled={!consent} className='popup-form__button'>
+            <button disabled={!consent || isSending} className='popup-form__button'>
                 Submit
             </button>
         </form>

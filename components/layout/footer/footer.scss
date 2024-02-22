@@ -112,6 +112,10 @@
         &:hover {
             opacity: 0.7;
         }
+
+        & > * {
+            font: inherit;
+        }
     }
 
     &__projects-wrapper {

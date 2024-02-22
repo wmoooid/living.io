@@ -15,7 +15,7 @@ export default function SectionContact() {
                 </div>
                 <ul className='section-contact__links-list'>
                     <li className='section-contact__links-item'>
-                        <a href='#' className='section-contact__link'>
+                        <a href='https://t.me/lvnghome' className='section-contact__link'>
                             <span className='section-contact__link-text'>TELEGRAM</span>
                             <span className='section-contact__link-icon'>
                                 <Icon_arrow direction='diagonal' />
@@ -23,7 +23,7 @@ export default function SectionContact() {
                         </a>
                     </li>
                     <li className='section-contact__links-item'>
-                        <a href='#' className='section-contact__link'>
+                        <a href='https://discord.com/invite/65B4TFfmNB' className='section-contact__link'>
                             <span className='section-contact__link-text'>Discord</span>
                             <span className='section-contact__link-icon'>
                                 <Icon_arrow direction='diagonal' />
@@ -31,7 +31,7 @@ export default function SectionContact() {
                         </a>
                     </li>
                     <li className='section-contact__links-item'>
-                        <a href='#' className='section-contact__link'>
+                        <a href='https://www.linkedin.com/company/lvng-io/' className='section-contact__link'>
                             <span className='section-contact__link-text'>LinkedIn</span>
                             <span className='section-contact__link-icon'>
                                 <Icon_arrow direction='diagonal' />

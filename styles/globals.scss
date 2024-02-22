@@ -15,7 +15,7 @@
     --dark-color: #121211;
 }
 
-.light {
+html.light {
     color-scheme: light;
 
     & svg {
@@ -34,7 +34,7 @@
     --dark-color: #121211;
 }
 
-.dark {
+html.dark {
     color-scheme: dark;
 
     & svg {
@@ -57,6 +57,14 @@
     html {
         color-scheme: dark;
         background-color: #1e1e1c;
+
+        & svg {
+            filter: invert(1) contrast(0.7);
+        }
+
+        & img {
+            filter: brightness(0.5);
+        }
     }
 }
 

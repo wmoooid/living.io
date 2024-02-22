@@ -1,10 +1,8 @@
 'use client';
 
 import Menu from '@/components/layout/menu/menu';
-import dynamic from 'next/dynamic';
+import Header from '@/components/layout/header/header';
 import { createContext, useState } from 'react';
-
-const Header = dynamic(() => import('@/components/layout/header/header'));
 
 interface NavigationContextProps {
     isMenuOpened: boolean;

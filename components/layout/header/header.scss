@@ -29,12 +29,24 @@
     }
 
     &__nav-list {
-        display: flex;
-        align-items: center;
+        display: grid;
+        grid-template-columns: 8.25rem 1px 8.25rem;
         gap: 3rem;
+        justify-items: end;
     }
 
     &__nav-item {
+        opacity: 0;
+        animation: appear 500ms ease-out 1ms forwards;
+    }
+
+    @keyframes appear {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
     }
 
     &__nav-button {
@@ -71,11 +83,12 @@
     .header {
         top: 1rem;
         margin: 0 5%;
-        padding: 1.5rem;
+        padding: 1.5rem 1.25rem;
         margin: 0 3%;
 
         &__nav-list {
-            gap: 1.75rem;
+            grid-template-columns: 1fr 1px 8.25rem;
+            gap: 1.5rem;
         }
 
         &__nav-item {

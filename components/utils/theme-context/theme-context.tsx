@@ -33,9 +33,8 @@ export default function ThemeContextProvider({ children }: ThemeContextProviderP
     }, []);
 
     useEffect(() => {
-        const docClassList = document.documentElement.classList;
-        docClassList.remove('light', 'dark');
-        docClassList.add(currentTheme);
+        document.documentElement.classList.remove('light', 'dark');
+        document.documentElement.classList.add(currentTheme);
     }, [currentTheme]);
 
     return <ThemeContext.Provider value={{ currentTheme, setCurrentTheme }}>{children}</ThemeContext.Provider>;

@@ -7,14 +7,15 @@
     --ease-back: cubic-bezier(0.45, 1.45, 0.8, 1);
 }
 
-@media (prefers-color-scheme: dark) {
-    html {
-        color-scheme: dark;
-        background-color: #1e1e1c;
-    }
+:root,
+:root.light {
+    --background-color: #fff;
+    --main-color: #1e1e1c;
+    --stripe-color: rgba(201, 201, 201, 0.5);
+    --dark-color: #121211;
 }
 
-html.light {
+.light {
     color-scheme: light;
 
     & svg {
@@ -26,14 +27,14 @@ html.light {
     }
 }
 
-:root.light {
-    --background-color: #fff;
-    --main-color: #1e1e1c;
-    --stripe-color: rgba(201, 201, 201, 0.5);
+:root.dark {
+    --background-color: #1e1e1c;
+    --main-color: #fff;
+    --stripe-color: rgba(94, 94, 94, 0.5);
     --dark-color: #121211;
 }
 
-html.dark {
+.dark {
     color-scheme: dark;
 
     & svg {
@@ -45,11 +46,18 @@ html.dark {
     }
 }
 
-:root.dark {
-    --background-color: #1e1e1c;
-    --main-color: #fff;
-    --stripe-color: rgba(94, 94, 94, 0.5);
-    --dark-color: #121211;
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #1e1e1c;
+        --main-color: #fff;
+        --stripe-color: rgba(94, 94, 94, 0.5);
+        --dark-color: #121211;
+    }
+
+    html {
+        color-scheme: dark;
+        background-color: #1e1e1c;
+    }
 }
 
 * {

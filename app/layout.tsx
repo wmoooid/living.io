@@ -60,3 +60,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </html>
     );
 }
+
+{
+    /* <Script strategy='beforeInteractive' id='apply-theme'>
+{`if (typeof window !== 'undefined' && window.matchMedia) {
+    const currentTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    document.documentElement.classList.add(currentTheme);
+}`}
+</Script> */
+}
